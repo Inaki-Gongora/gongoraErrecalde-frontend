@@ -9,6 +9,34 @@ body {
     margin: 0;
 }
 
+.container {
+    position: relative; /* Establece posición relativa para poder posicionar el footer correctamente */
+}
+
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Asegura que el header esté por encima del contenido */
+}
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 .login-container {
     background-color: #222;
@@ -24,9 +52,10 @@ h1 {
 }
 
 input {
-    width: 100%;
+    width: calc(100% - 22px); /* Resta 22px para tener en cuenta los márgenes izquierdo y derecho */
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 10px; /* Agrega un margen de 10px a la derecha */
     border: none;
     border-radius: 5px;
 }
