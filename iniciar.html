@@ -9,19 +9,19 @@
 <body>
     <header>
         <h1>Zephyr</h1>
-        <!-- info -->
+        <!-- Agrega un logo u otra información adicional si lo deseas -->
     </header>
     <div class="container">
         <div id="registro" class="login-container">
-            <h2>Registrarse</h2>
+            <h2>Iniciar Sesión</h2>
             <form>
                 <a class="volver" href="./usuario2.html">< Volver</a>
                 <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
-                <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Contraseña" required>
-                <button type="submit">Registrarse</button>
+                <button type="submit">Iniciar Sesión</button>
             </form>
-            <p>¿Ya tienes cuenta? <a href="./iniciar.html">Iniciar sesión</a></p>
+            <p>¿No tienes cuenta? <a href="./usuario2.html">Registrarse</a></p>
+            <a href="./recuperar_contra.html">Olvidé mi contraseña</a></p>
         </div>
 
         <div id="inicio-sesion" class="login-container" style="display: none;">
@@ -29,12 +29,12 @@
             <form>
                 <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
                 <input type="password" name="password" placeholder="Contraseña" required>
-                <button type="submit">Iniciar sesión</button>
+                <a href="./iniciar.html">Iniciar sesión</a>
             </form>
-            <p>¿No tienes cuenta? <a href="#registro">Registrarse</a></p>
+            <p>¿No tienes cuenta? <a href="#registro">Crear una cuenta</a></p>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Zephyr. Todos los derechos reservados.</p>
-        <!-- info -->
+        <!-- Puedes agregar información adicional al pie de página si lo deseas -->
     </footer>
