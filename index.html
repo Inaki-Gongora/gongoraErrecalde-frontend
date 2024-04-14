@@ -1,52 +1,287 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina</title>
+    <title>Zephyr - Anillos</title>
+    <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1>Mi primera pagina</h1>
+    <header id="header" style="transition: top 0.5s ease;">
+        <div class="botones-header">
+            <button class="icono-menu">
+                <img src="multimedia/menu.png" alt="menu">
+            </button>
+            <button class="icono-buscar">
+                <img src="multimedia/buscar.png" alt="buscar">
+            </button>
+            <a href="landing.html" class="logo-marca" target="_blank">
+                <h1>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
+            </a>
+            <button class="icono-carro">
+                <img src="multimedia/carro.png" alt="carro">
+            </button>
+            <button class="icono-usuario">
+                <img src="multimedia/user.png" alt="usuario">
+            </button>
         </div>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Productos</li>
-                <li>Carrito</li>
-                <li>Contacto</li>
-            </ul>
-        </div>
+        <hr class="horizontal-rule">
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    const tituloProducto = document.querySelector('.titulo-producto');
+
+    header.style.transition = 'none';
+    tituloProducto.style.transition = 'none';
+    function devolverAnimaciones() {
+      header.style.transition = 'all 0.5s ease'
+      tituloProducto.style.transition = 'all 0.5s ease'
+    }
+
+    setTimeout(devolverAnimaciones, 5)
+    // Verificar la posición inicial del desplazamiento
+    let currentScrollPos = window.pageYOffset;
+    
+    // Verifica si estás en la parte superior de la página
+    if (currentScrollPos === 0) {
+        // Oculta el header y aplica la clase para modificar el estilo del contenedor
+        header.style.top = "-100px";
+        tituloProducto.classList.add('titulo-producto-full');
+    } else {
+        // Muestra el header y elimina la clase para volver a los estilos originales
+        header.style.top = "0";
+        tituloProducto.classList.remove('titulo-producto-full');
+    }
+
+    // Función para manejar el evento de desplazamiento
+    window.onscroll = function() {
+        // Actualiza la posición actual de desplazamiento
+        currentScrollPos = window.pageYOffset;
+        
+        // Verifica si estás en la parte superior de la página
+        if (currentScrollPos === 0) {
+            header.style.top = "-100px"; // Oculta el header
+            tituloProducto.classList.add('titulo-producto-full'); // Aplica la clase para modificar el estilo del contenedor
+        } else {
+            header.style.top = "0"; // Muestra el header
+            tituloProducto.classList.remove('titulo-producto-full'); // Elimina la clase para volver a los estilos originales
+        }
+    };
+});
+
+
+    
+    </script>
     <main>
-        <form>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="">
-
-            <label for="lastname">Lastname</label>
-            <input type="text" name="lastname" id="">
-            <label for="email">Email</label>
-            <input type="email"name="email" id="">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="">
-
-            <label for="fecha">Fecha</label>
-            <input type="date" name="fecha">
-
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetear</button>
-        </form>
-        <div>
-            <img src="./multimedia/avatars-000512579256-vtfntl-t240x240.jpg" alt="imagen">
+      <div class="titulo-producto">
+        <img src="multimedia/anillo1.png" class="anillos-foto">
+        <h1 class="anillos-titulo">ANILLOS</h1>
+      </div>
+      <hr class="horizontal-rule">
+      <div class="filtrar-ordenar">
+        <button class="filtrar-por">
+          <img src="multimedia/filtrar.png" alt="filtrar" class="filtrar-logo">
+        <p class="filtord">Filtrar</p>
+        </button>
+        <button class="ordenar-por">
+          <img src="multimedia/ordenar.png" alt="ordenar" class="ordenar-logo">
+        <p class="filtord">Ordenar</p>
+        </button>
+      </div>
+      <hr class="horizontal-rule">
+  
+  
+  
+  <!-- PRIMERA FILA --> 
+      <section class="seccion">
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
         </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+        
+      </section>
+  
+  
+      <!-- Segunda fila -->
+  
+      <section class="seccion2">
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+  
+        <div class="contenedor-producto">
+          <div class="div-boton">
+            <button class="agregar-favorito">
+            </button>
+          </div>
+          <div class="box-producto">
+            <a class="links" href="vista-producto1.html" target="_blank" class="foto-producto">
+              <img src="multimedia/foto-producto 1.png" alt="producto1" >
+            </a>
+          </div>
+          <div class="textos">
+            <p class="nombre-producto">Anillo de Colección N°1</p>
+            <p class="precio-producto">$380</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div>
-
-
-        </div>
+      <p class="lorems">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        "
+      </p>
+      <h1 class="titulo-footer">
+        ZEPHYR<span class="marca-registrada">&reg;</span>
+      </h1>
     </footer>
 </body>
+
 </html>
