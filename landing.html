@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zephyr - Inicio</title>
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleLanding.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,35 +16,38 @@
 </head>
 
 <body>
-    <header id="header" style="transition: top 0.5s ease;">
-        <div class="botones-header" id="botones-header">
-            <button class="icono-menu" id="icono-menu">
-                <img src="multimedia/menu.png" alt="menu">
-            </button>
-            <button class="icono-buscar" id="icono-buscar">
-                <img src="multimedia/buscar.png" alt="buscar">
-            </button>
-            <a href="landing.html" class="logo-marca" target="_blank" id="contenedor-titulo">
+    <section class="fondo">
+        <header id="header" style="transition: top 0.5s ease;">
+            <div class="botones-header" id="botones-header">
+                <button class="icono-menu" id="icono-menu">
+                    <img src="multimedia/menu.png" alt="menu">
+                </button>
+                <button class="icono-buscar" id="icono-buscar">
+                    <img src="multimedia/buscar.png" alt="buscar">
+                </button>
+                <a href="landing.html" class="logo-marca" target="_blank" id="contenedor-titulo">
 
-            </a>
-            <button class="icono-carro" id="icono-carro">
-                <img src="multimedia/carro.png" alt="carro">
-            </button>
-            <button class="icono-usuario" id="icono-usuario">
-                <img src="multimedia/user.png" alt="usuario">
-            </button>
-        </div>
-        <hr class="horizontal-rule" id="horizontal-rule">
-    </header>
-
-    <main>
-        <h1 class="titulo-landing-main" id="titulo-landing-main">
-            ZEPHYR<span class="marca-registrada">&reg;</span>
-        </h1>
-        <a href="index.html" class="ver-productos" target="_blank">
-            VER PRODUCTOS
-        </a>
-    </main>
+                </a>
+                <button class="icono-carro" id="icono-carro">
+                    <img src="multimedia/carro.png" alt="carro">
+                </button>
+                <button class="icono-usuario" id="icono-usuario">
+                    <img src="multimedia/user.png" alt="usuario">
+                </button>
+            </div>
+            <hr class="horizontal-rule" id="horizontal-rule">
+        </header>
+            <main>
+                <h1 class="titulo-landing-main" id="titulo-landing-main">
+                    ZEPHYR<span class="marca-registrada">&reg;</span>
+                </h1>
+                <a href="index.html" class="ver-productos" target="_blank">
+                    VER PRODUCTOS
+                </a>
+            </main>
+    
+    </section>
+    
 
     <footer>
         <p class="lorems">
@@ -84,31 +87,25 @@
                 botonCarro.style.background = 'none';
                 botonUser.style.background = 'none';
                 botonesHeader.style.justifyContent = 'center';
-                botonesHeader.style.float = 'right'
-                tituloLandingMain.style.zIndex = '3'
-                tituloLandingMain.style.left = '50%'
-                tituloLandingMain.style.top = '15%'
-                tituloLandingMain.style.transform = "translateX(-50%)"
-                tituloLandingMain.style.position = 'fixed'
-                tituloLandingMain.style.opacity = '0.55'
+                // botonesHeader.style.float = 'right'
+                botonMenu.style.float = 'left'
+                botonesHeader.style.transform = ""
                 horizontalRule.style.opacity = '0'
+                header.style.borderBottom = 'none'
             } else {                
                 tituloLandingMain.classList.remove('titulo-landing-main');
                 tituloLandingMain.classList.add('logo-marca-landing');
                 botonesHeader.style.justifyContent = '';
                 header.style.background = 'center';
-                botonesHeader.style.float = 'right';
+                // botonesHeader.style.float = 'right';
+                botonMenu.style.float = 'left'
                 header.style.backgroundColor = '#F9F9F9'
                 header.style.opacity = '0.85'  
                 horizontalRule.style.position = 'fixed'   
                 horizontalRule.style.top = '100px'                     
-                tituloLandingMain.style.zIndex = '3'               
-                tituloLandingMain.style.transform = "translateX(-50%)"
-                tituloLandingMain.style.top = '2%'
-                tituloLandingMain.style.left = '50%'             
-                tituloLandingMain.style.position = 'fixed'
-                tituloLandingMain.style.opacity = ''
                 horizontalRule.style.opacity = ''
+                header.style.borderBottom = ''
+                botonesHeader.style.transform = "scale(0.8,0.8)"
             }
         }
         window.addEventListener('scroll', verificarPosicion);

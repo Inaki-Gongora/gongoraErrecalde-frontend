@@ -284,13 +284,6 @@ footer {
   color: black;
 }
 
-body {
-  background-image: url(multimedia/fondo-landing.png);
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área visible */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  
-}
 
 .logo-marca {
   color: black;
@@ -324,3 +317,4 @@ body {
   text-align: center;
   line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
 }
+
