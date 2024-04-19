@@ -41,14 +41,21 @@
                 <h1 class="titulo-landing-main" id="titulo-landing-main">
                     ZEPHYR<span class="marca-registrada">&reg;</span>
                 </h1>
-                <a href="index.html" class="ver-productos" target="_blank">
-                    VER PRODUCTOS
-                </a>
+                
             </main>
-    
     </section>
-    
-
+    <section class="seccion-ver-productos">
+        <div class="ver-anillos">
+            <a href="index.html" class="ver-productos" target="_blank">
+                VER ANILLOS
+            </a>
+        </div>
+        <div class="ver-collares">
+            <a href="index.html" class="ver-productos" target="_blank">
+                VER COLLARES
+            </a>
+        </div>
+    </section>
     <footer>
         <p class="lorems">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -87,8 +94,7 @@
                 botonCarro.style.background = 'none';
                 botonUser.style.background = 'none';
                 botonesHeader.style.justifyContent = 'center';
-                // botonesHeader.style.float = 'right'
-                botonMenu.style.float = 'left'
+                botonesHeader.style.float = 'right'              
                 botonesHeader.style.transform = ""
                 horizontalRule.style.opacity = '0'
                 header.style.borderBottom = 'none'
@@ -97,15 +103,14 @@
                 tituloLandingMain.classList.add('logo-marca-landing');
                 botonesHeader.style.justifyContent = '';
                 header.style.background = 'center';
-                // botonesHeader.style.float = 'right';
-                botonMenu.style.float = 'left'
+                botonesHeader.style.float = 'right';
                 header.style.backgroundColor = '#F9F9F9'
                 header.style.opacity = '0.85'  
                 horizontalRule.style.position = 'fixed'   
                 horizontalRule.style.top = '100px'                     
                 horizontalRule.style.opacity = ''
                 header.style.borderBottom = ''
-                botonesHeader.style.transform = "scale(0.8,0.8)"
+                botonesHeader.style.transform = "scale(0.7,0.7)"
             }
         }
         window.addEventListener('scroll', verificarPosicion);

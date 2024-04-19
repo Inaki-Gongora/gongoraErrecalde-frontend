@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: scale(0.7,0.7);
+    transform: scale(0.6,0.6);
   }
   
   
@@ -233,42 +233,14 @@
     
   }
   
-  .ver-productos {
-    display: flex;
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    width: fit-content;
-    height: max-content;
-    margin-left: 50%;
-    transform: translateX(-55%);
-    border: none;
-    font-style: italic;
-    border-radius: 5px;
-    padding: 0;
-    text-decoration: none;
-    opacity: 0.95;
-  }
-  
-  .ver-productos:hover {
-    opacity: 0.7;
-    transition: all 0.2s;
-  }
-  
-  .ver-productos:visited {
-    color: white;
-    text-decoration: none;
-    opacity: 0.95;
-  }
+
   
   .fondo {
-    padding-top: 350px;
+    height: 500px;
     background-image: url(multimedia/fondo-landing.png);
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área visible */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 600px;
   }
   
   .logo-marca {
@@ -286,7 +258,7 @@
     color: black;
     text-decoration: none;
     font-family: "Times New Roman";
-    font-size: 290px;
+    font-size: 250px;
     opacity: 0.8;
     vertical-align: middle;
     text-align: center;
@@ -303,21 +275,58 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: "Times New Roman";
-    font-size: 100px;
+    font-size: 80px;
     opacity: 0.8;
     vertical-align: middle;
     text-align: center;
     line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
     z-index: 3;
     transform: translateX(-50%);
-    top: 4%;
+    top: 4.5%;
     left: 50%;
     position: fixed;
     opacity: "";
 
   }
 
+.seccion-ver-productos {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
 
-@media (width <= 1740px){
-    
+.ver-anillos {
+  margin-left: 100px;
+}
+
+.ver-collares {
+  margin-right: 100px;
+}
+
+.ver-productos {
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  width: fit-content;
+  height: max-content;
+  border: none;
+  font-style: italic;
+  border-radius: 5px;
+  padding: 0;
+  text-decoration: none;
+  opacity: 0.95;
+  
+}
+
+.ver-productos:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.ver-productos:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  opacity: 0.95;
 }
