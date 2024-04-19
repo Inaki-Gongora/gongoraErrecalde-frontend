@@ -4,37 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="iniciar.css">
+    <link rel="stylesheet" href="styleLand.css"> <!-- Importamos solo el CSS proporcionado -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('multimedia/fondo-landing.png');
+            background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la página */
+            background-position: center; /* Centra el fondo horizontal y verticalmente */
+            background-repeat: no-repeat; /* Evita que el fondo se repita */
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-marca {
+            color: black;
+            text-decoration: none;
+            font-family: "Abril Fatface", serif;
+            font-size: 80px; /* Ajustamos el tamaño de la fuente */
+            font-weight: bold;
+            opacity: 0.8;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 50%; /* Ajustamos el line-height */
+        }
+        .botones-header {
+            display: flex;
+            justify-content: space-between; /* Alineamos los botones a los extremos */
+            align-items: center;
+            width: 100%; /* Ocupa todo el ancho disponible */
+        }
+        .icono-menu,
+        .icono-buscar {
+            margin-left: 10px; /* Ajustamos el margen izquierdo de los botones */
+        }
+        .icono-carro,
+        .icono-usuario {
+            margin-right: 10px; /* Ajustamos el margen derecho de los botones */
+        }
+    </style>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Zephyr</h1>
-        <!-- Agrega un logo u otra información adicional si lo deseas -->
-    </header>
-    <div class="container">
-        <div id="registro" class="login-container">
-            <h2>Iniciar Sesión</h2>
-            <form>
-                <a class="volver" href="./registrarse.html">< Volver</a>
-                <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-            <p>¿No tienes cuenta? <a href="./registrarse.html">Registrarse</a></p>
-            <a href="./recuperar_contra.html">Olvidé mi contraseña</a></p>
+        <div class="botones-header">
+            <button class="icono-menu" id="icono-menu">
+                <img src="multimedia/menu.png" alt="menu">
+            </button>
+            <button class="icono-buscar" id="icono-buscar">
+                <img src="multimedia/buscar.png" alt="buscar">
+            </button>
+            <a href="landing.html" class="logo-marca" target="_blank" id="contenedor-titulo">ZEPHYR<span class="marca-registrada">&reg;</span></a>
+            <button class="icono-carro" id="icono-carro">
+                <img src="multimedia/carro.png" alt="carro">
+            </button>
+            <button class="icono-usuario" id="icono-usuario">
+                <img src="multimedia/user.png" alt="usuario">
+            </button>
         </div>
+    </header>
 
-        <div id="inicio-sesion" class="login-container" style="display: none;">
-            <h2>Iniciar sesión</h2>
+    <!-- Contenido del inicio de sesión -->
+    <div class="container">
+        <div class="login-container">
+            <h1>Iniciar sesión</h1>
             <form>
                 <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
                 <input type="password" name="password" placeholder="Contraseña" required>
-                <a href="./iniciar.html">Iniciar sesión</a>
+                <div class="login-button-container">
+                    <button type="submit" class="login-button">Iniciar sesión</button>
+                </div>
             </form>
-            <p>¿No tienes cuenta? <a href="#registro">Crear una cuenta</a></p>
+            <p>¿No tienes cuenta? <a href="#registro" class="crear-cuenta">Crear una cuenta</a></p>
         </div>
     </div>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Zephyr. Todos los derechos reservados.</p>
-        <!-- Puedes agregar información adicional al pie de página si lo deseas -->
+        <p class="lorems">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <h1 class="titulo-footer">
+            ZEPHYR<span class="marca-registrada">&reg;</span>
+        </h1>
     </footer>
+</body>
+</html>
