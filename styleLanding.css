@@ -102,6 +102,9 @@
     top: 100px
   }
   
+  .horizontalRule {
+    border-top: 1px solid black;
+  }
   .filtrar-por,.ordenar-por{
     display: flex;
     width: 150px;
@@ -233,14 +236,27 @@
     
   }
   
+  .nueva-coleccion{
+    display: flex;
+    width: 100%;
+    padding-top: 608px;
+    padding-left: 5px;
+  }
 
+  .nueva-coleccion-texto{
+    color: rgb(233, 233, 233);
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+  }
   
   .fondo {
-    height: 500px;
+    height: 654px;
     background-image: url(multimedia/fondo-landing.png);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área visible */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; 
+    background-position-y: -145px;
+    background-repeat: no-repeat; 
   }
   
   .logo-marca {
@@ -289,44 +305,56 @@
 
   }
 
-.seccion-ver-productos {
-  display: flex;
-  justify-content: space-between;
-  height: 500px;
-}
+  .seccion-ver-productos {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+  }
 
-.ver-anillos {
-  margin-left: 100px;
-}
+  .ver-anillos {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding: 200px;
+    border: 1px solid black;
+  }
 
-.ver-collares {
-  margin-right: 100px;
-}
+  .ver-collares {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 200px;
+    border: 1px solid black;;
 
-.ver-productos {
-  display: flex;
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  width: fit-content;
-  height: max-content;
-  border: none;
-  font-style: italic;
-  border-radius: 5px;
-  padding: 0;
-  text-decoration: none;
-  opacity: 0.95;
-  
-}
+  }
 
-.ver-productos:hover {
-  opacity: 0.7;
-  transition: all 0.2s;
-}
+  .ver-productos {
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    /* font-style: italic; */
+    width: fit-content;
+    height: max-content;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    text-decoration: none;
+    opacity: 0.95;
+    padding-top: 350px;
+    width: max-content;
+  } 
 
-.ver-productos:visited {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  opacity: 0.95;
-}
+  .ver-productos:hover {
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+
+  .ver-productos:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    opacity: 0.95;
+  }
