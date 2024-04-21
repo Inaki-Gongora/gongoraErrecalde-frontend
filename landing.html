@@ -37,6 +37,7 @@
             </div>
             <hr class="horizontal-rule" id="horizontal-rule">
         </header>
+
             <main>
                 <h1 class="titulo-landing-main" id="titulo-landing-main">
                     ZEPHYR<span class="marca-registrada">&reg;</span>
@@ -51,13 +52,13 @@
                 <hr class="horizontalRule">
                 <section class="seccion-ver-productos">
                     <div class="ver-anillos">
-                        <a href="index.html" class="ver-productos" target="_blank">
-                            VER ANILLOS
+                        <a href="productoAnillos.html" class="ver-productos" target="_blank">
+                            ANILLOS
                         </a>
                     </div>
-                    <div class="ver-collares">
-                        <a href="index.html" class="ver-productos" target="_blank">
-                            VER COLLARES
+                    <div class="ver-aros">
+                        <a href="productoAros.html" class="ver-productos" target="_blank">
+                            AROS
                         </a>
                     </div>
                 </section>
@@ -73,12 +74,7 @@
     </footer>
 
     <script>
-        const botonMenu = document.getElementById('icono-menu');
-        const botonBuscar = document.getElementById('icono-buscar');
-        const botonCarro = document.getElementById('icono-carro');
-        const botonUser = document.getElementById('icono-usuario');
         const header = document.getElementById('header');
-        const contenedorTitulo = document.getElementById('contenedor-titulo');
         const tituloLandingMain = document.getElementById('titulo-landing-main');
         const botonesHeader = document.getElementById ('botones-header')
         const horizontalRule = document.getElementById ('horizontal-rule')
@@ -95,10 +91,6 @@
                 tituloLandingMain.classList.remove('logo-marca-landing');
                 tituloLandingMain.classList.add('titulo-landing-main');
                 header.style.background = 'none';
-                botonMenu.style.background = 'none';
-                botonBuscar.style.background = 'none';
-                botonCarro.style.background = 'none';
-                botonUser.style.background = 'none';
                 botonesHeader.style.justifyContent = 'center';
                 botonesHeader.style.float = 'right'              
                 botonesHeader.style.transform = ""

@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.advent-pro-clean {
+  font-family: "Advent Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+main {
+  margin-top: 150px;
+}
+
+header {
+  background-color: #F9F9F9;
+  height: 100px;
+  width: auto;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0; 
+  z-index: 2;
+  border-bottom: 1px solid #000;
+  opacity: 0.85;
+  
+}
+
+
+.botones-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: scale(0.7,0.7);
+  float: right;
+
+}
+
+
+.botones-header button {
+  height: 100px;
+  border: none;
+  transform: scale(0.7,0.7);
+  vertical-align: middle;
+}
+
+.botones-header :hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.icono-menu,.icono-buscar,.icono-carro,.icono-usuario {
+  background: none;
+}
+
+.zephyr-grande{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Times New Roman";
+  font-size: 80px;
+  opacity: 0.9;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+  z-index: 3;
+  transform: translateX(-50%);
+  top: 10px;
+  left: 50%;
+  position: fixed;
+  opacity: "";
+}
+
+.zephyr-grande:hover{
+  opacity: 0.65;
+}
+
+.zephyr-grande:active{
+  opacity: 0.8;
+}
+
+.logo-marca:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.marca-registrada {
+  font-size: 40px;
+  vertical-align:bottom;
+}
+
+body {
+  font-family: "Advent Pro";
+  overflow-x: hidden;
+}
+
+.titulo-producto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-image: url(multimedia/anillos-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: -10%;
+  border-bottom: 1px solid black;
+}
+
+
+.titulo-producto-full{
+  transform: scale(1.15,1.15);
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.anillos-titulo {
+  color: #000;
+  font-family: "Abril Fatface";
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.75;
+}
+
+.horizontal-rule {
+  border: none;
+  border-top: 3px solid black;
+}
+
+.filtrar-por,.ordenar-por{
+  display: flex;
+  width: 120px;
+  align-items: center;
+}
+
+.filtrar-ordenar {
+  display: flex;
+  background-color: #E9E9E9;
+}
+  
+.filtrar-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.ordenar-logo {
+  width: auto;
+  margin-right: -15px;
+}
+
+.filtord {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Noto Sans";
+}
+
+.filtrar-ordenar button {
+  border: none;
+  background-color: #E9E9E9;
+}
+
+.filtrar-ordenar button:hover {
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nombre-producto {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.seccion{
+  display: flex;
+  justify-content: center;
+  background-color: #F9F9F9;
+  margin-top: -76px;
+}
+
+.seccion2 {
+  display: flex;
+  justify-content: center;
+  background-color: #F9F9F9;
+  margin-top: -150px;
+  margin-bottom: -75px;
+}
+
+.contenedor-producto {
+  width: fit-content;
+  height: max-content;
+  padding: 50px;
+  border: 1px outset black;
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  transition: 0.15s;
+  
+}
+
+.contenedor-producto:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.foto-producto {
+  height: 500px;
+}
+
+.textos{
+  align-items: center ;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.box-producto{
+  width: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.div-boton{
+  height: max-content;
+}
+
+.agregar-favorito {
+  width: 50px;
+  height: 50px;
+  border: none;
+  float: right;
+  transform: scale(0.4,0.4);
+  background-color: transparent;
+  background-image:url(multimedia/corazon-blanco.png);
+  background-size: cover;
+}
+
+.agregar-favorito:hover{
+  cursor: pointer;
+  background-image: url(multimedia/corazon-negro.png);
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+
+.agregar-favorito:active {
+  opacity: 1;
+  transition: all 0.1s;
+}
+
+.foto-producto{
+  width: 287px;
+}
+
+
+
+footer {
+  height: max-content;
+  background-color: #403F3F;
+}
+
+.titulo-footer {
+  font-family: "Abril Fatface";
+  font-size: 150px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+.links,.links:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.lorems {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFF;
+  font-family: "Advent Pro";
+  font-size: 16px;
+  font-weight: 400; 
+  line-height: normal;
+  opacity: 0.8;
+}
+
+
+
+.ver-productos {
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  width: fit-content;
+  height: max-content;
+  margin-bottom: 400px;
+  margin-top: 500px;
+  margin-left: 50%;
+  transform: translateX(-55%);
+  border: none;
+  font-style: italic;
+  text-decoration: underline;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.ver-productos:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.ver-productos:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+.titulo-landing-main {
+  color: black;
+  text-decoration: none;
+  font-family: "Times New Roman";
+  font-size: 400px;
+  opacity: 0.8;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+}
+
+.logo-marca-landing {
+  color: black;
+  text-decoration: none;
+  font-family: "Times New Roman";
+  font-size: 120px;
+  opacity: 0.8;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+}
+
+.filtord,.filtrar-logo,.ordenar-logo{
+  transform: scale(0.7,0.7);
+}
+.seccion, .seccion2 {
+  transform: scale(0.701,0.7);
+}
+
+main{
+  background-color: #F9F9F9;
+}
