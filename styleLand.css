@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px; /* Agregamos un padding a los extremos */
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 .botones-header button {
@@ -91,8 +92,9 @@ header {
 .logo-marca {
     color: black;
     text-decoration: none;
-    font-family: "Times New Roman";
-    font-size: 60px;
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+    font-weight: bold;
     opacity: 0.8;
     vertical-align: middle;
     text-align: center;
@@ -139,6 +141,7 @@ html, body {
 }
 
 .container {
+    flex: 1;
     display: flex;
     justify-content: center; /* Centramos horizontalmente */
     align-items: center; /* Centramos verticalmente */
