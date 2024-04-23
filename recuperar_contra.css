@@ -1,89 +1,334 @@
-body {
-    font-family: Alef;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21.79px;
-    text-align: left;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
-}    
+    padding: 0;
+    box-sizing: content-box;
+}
 
-.container {
-    position: relative; 
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.advent-pro-clean {
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    background-color: #f9f9f9;
+    opacity: 0.85; 
+    height: 100px;
+    width: auto;
     position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+    top: 0; /* Establece el header en la parte superior de la página */
+    left: 0;
+    right: 0; /* Para que ocupe todo el ancho de la página */
+    z-index: 2;
+    border-bottom: 1px solid #000;
+    justify-content: space-between; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.botones-header {
+    margin-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 470px; /* Agregamos un padding a los extremos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.botones-header button {
+    width: 49px; /* Ancho fijo para los botones */
+    height: 49px; /* Alto fijo para los botones */
+    border: none;
+    background-color: #f9f9f9;
+    opacity: 0.9; 
+    display: flex;
+    align-items: center; /* Centramos verticalmente */
+}
+
+/* Ajustamos el tamaño de las imágenes de los iconos */
+.botones-header img {
+    width: 100%; /* Establecemos un tamaño para que quepan dentro de los botones */
+    height: auto; /* Mantenemos la relación de aspecto */
+}
+
+.icono-menu,
+.icono-buscar,
+.icono-carro,
+.icono-usuario {
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.marca-registrada {
+    font-size: 40px; /* Ajustamos el tamaño del logo de la marca registrada */
+    vertical-align: bottom; /* Ajustamos la alineación vertical */
 }
 
 
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.botones-header :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
 }
+
+.logo-marca {
+    color: black;
+    text-decoration: none;
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+    font-weight: bold;
+    opacity: 0.8;
+    padding-right: 430px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px; /*Aca estoy centrando el texto dentro del botón*/
+}
+
+.titulo-landing-main {
+    color: black;
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-size: 250px;
+    opacity: 0.8;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+    z-index: 0;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    position: fixed;
+    opacity: 0.55;
+}
+
+.logo-marca-landing {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-size: 80px;
+    opacity: 0.8;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+    z-index: 3;
+    transform: translateX(-50%);
+    top: 4.5%;
+    left: 50%;
+    position: fixed;
+    opacity: "";
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    min-height: calc(100vh - 200px); /* Usamos min-height en lugar de height */
+    font-family: "Abril Fatface", serif;
+    margin-top: auto; /* Centramos verticalmente respecto al encabezado */
+    margin-bottom: auto; /* Centramos verticalmente respecto al pie de página */
+    text-align: center; /* Añadimos text-align: center para centrar el contenido */
+}
+
 
 
 .login-container {
-    position: relative;
-    background-color: #222;
+    margin-top: 80px;
+    background-color: #fff;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
+    width: 400px; /* Agregamos un ancho fijo al contenedor de inicio de sesión */
+    display: flex;
+    flex-direction: column; /* Alinear elementos de forma vertical */
+    align-items: center; /* Centrar horizontalmente los elementos */
 }
 
-.volver {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-}
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: "Abril Fatface", serif; /* Cambiamos la tipografía */
+}
+
+p {
+    margin-top: 10px; /* Añadimos espacio entre el párrafo y el botón */
 }
 
 input {
-    width: calc(100% - 20px);
+    width: 88%;
     padding: 10px;
     margin-bottom: 10px;
     margin-right: 10px; 
-    border: none;
+    border: 1px solid #ccc; /* Borde del input */
     border-radius: 5px;
 }
 
-button {
+.login-button {
     transition: transform 0.5s;
-    background-color: #007bff;
+    background-color: #093b5d; /* Color de fondo del botón */
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
 }
-button:hover{
-    transform: scale(1.10 ,1.10);
+
+.login-button:hover {
+    transform: scale(1.05);
 }
 
 a {
-    color: #007bff;
+    color: #093b5d;
     text-decoration: none;
+}
+
+.crear-cuenta:hover {
+    color: #00538f; /* Cambia el color a rojo cuando el cursor pasa por encima */
+}
+
+footer {
+    height: max-content;
+    background-color: #f9f9f9;
+    color: #474747;
+    padding: 20px; /* Espacio alrededor del contenido */
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.center {
+    flex: 2;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.right {
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.right a {
+    display: block; /* Cambiamos el display a block para que cada icono esté en una línea */
+    margin-bottom: 5px; /* Espacio entre los iconos de las redes sociales */
+    margin-left: 300px;
+}
+
+.titulo-footer {
+    font-family: "Abril Fatface";
+    font-size: 150px;
+    font-weight: 100;
+    color: #474747;
+    text-align: center;
+}
+
+.lorems {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #666666;
+    font-family: "Advent Pro";
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: normal;
+}
+
+.titulo-producto-full {
+    transform: scale(1.1,1.1);
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+    justify-content: center;
+    align-items: center;
+    margin-bottom:170px;
+    transition: all 0.5s ease;
+}
+
+.nueva-coleccion {
+    display: flex;
+    width: 100%;
+    padding-top: 608px;
+    padding-left: 5px;
+}
+
+.nueva-coleccion-texto {
+    color: rgb(233, 233, 233);
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fondo {
+    height: 654px;
+    background-image: url(multimedia/fondo-landing.png);
+    background-size: cover; 
+    background-position-y: -145px;
+    background-repeat: no-repeat; 
+}
+
+.seccion-ver-productos {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.ver-anillos {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding: 200px;
+    border: 1px solid black;
+}
+
+.ver-collares {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 200px;
+    border: 1px solid black;
+}
+
+.ver-productos {
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    /* font-style: italic; */
+    width: fit-content;
+    height: max-content;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    text-decoration: none;
+    opacity: 0.95;
+    padding-top: 350px;
+    width: max-content;
+} 
+
+.ver-productos:hover {
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.ver-productos:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    opacity: 0.95;
 }

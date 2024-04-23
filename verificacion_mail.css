@@ -168,12 +168,13 @@ p {
 }
 
 input {
-    width: calc(100% - 125px); 
+    width: calc(100% - 110px); 
     padding: 10px;
     margin-bottom: 10px;
-    margin-right: 10px; 
+    margin-right: 5px; 
     border: 1px solid #ccc; /* Borde del input */
     border-radius: 5px;
+    text-align: center;
 }
 
 .login-button {
