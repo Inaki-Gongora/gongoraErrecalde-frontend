@@ -19,14 +19,15 @@
     <section class="fondo">
         <header id="header" style="transition: top 0.5s ease;">
             <div class="div-contacto">
-                <p class="contacto-texto">+ CONTACTO</p>
+                <a href="contacto.html" class="contacto-a" target="_blank">
+                    <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+                </a>
             </div>
             <div class="botones-header" id="botones-header">              
                 <button class="icono-buscar" id="icono-buscar">
                     <img src="multimedia/buscar.png" alt="buscar">
                 </button>
                 <a href="landing.html" class="logo-marca" target="_blank" id="contenedor-titulo">
-
                 </a>
                 <button class="icono-carro" id="icono-carro">
                     <img src="multimedia/carro.png" alt="carro">
@@ -56,7 +57,7 @@
                 <section class="seccion-ver-productos">
                     <div class="ver-anillos">
                         <a href="productoAnillos.html" class="ver-productos" target="_blank">
-                            ANILLOS
+                           ANILLOS
                         </a>
                     </div>
                     <div class="ver-aros">
@@ -80,9 +81,11 @@
         const header = document.getElementById('header');
         const tituloLandingMain = document.getElementById('titulo-landing-main');
         const botonesHeader = document.getElementById ('botones-header')
+        const contactoTexto = document.getElementById ('contacto-texto')
         const horizontalRule = document.getElementById ('horizontal-rule')
         tituloLandingMain.style.transition = 'all 0.5s ease';
         botonesHeader.style.transition = 'all 0.5s ease';
+        contactoTexto.style.transition = 'all 0.5s ease';
         header.style.transition = 'none';
         function devolverAnimaciones() {
             header.style.transition = 'all 0.5s ease';
@@ -99,6 +102,8 @@
                 botonesHeader.style.transform = ""
                 horizontalRule.style.opacity = '0'
                 header.style.borderBottom = 'none'
+                contactoTexto.style.opacity = '0'
+                contactoTexto.style.fontSize = '30px'              
             } else {                
                 tituloLandingMain.classList.remove('titulo-landing-main');
                 tituloLandingMain.classList.add('logo-marca-landing');
@@ -111,7 +116,9 @@
                 horizontalRule.style.top = '100px'                     
                 horizontalRule.style.opacity = ''
                 header.style.borderBottom = ''
-                botonesHeader.style.transform = "scale(0.7,0.7)"
+                botonesHeader.style.transform = "scale(0.65,0.65)"
+                contactoTexto.style.opacity = ''; 
+                contactoTexto.style.fontSize = ''  
             }
         }
         window.addEventListener('scroll', verificarPosicion);
