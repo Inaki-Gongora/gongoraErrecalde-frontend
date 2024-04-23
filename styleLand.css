@@ -31,15 +31,16 @@ header {
     right: 0; /* Para que ocupe todo el ancho de la página */
     z-index: 2;
     border-bottom: 1px solid #000;
-    justify-content: center; /* Centra horizontalmente los elementos */
+    justify-content: space-between; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
 }
 
 .botones-header {
+    margin-left: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Agregamos un padding a los extremos */
+    padding: 0 470px; /* Agregamos un padding a los extremos */
     width: 100%; /* Ocupa todo el ancho disponible */
 }
 
@@ -50,31 +51,20 @@ header {
     background-color: #f9f9f9;
     opacity: 0.9; 
     display: flex;
-    justify-content: center; /* Centramos horizontalmente */
     align-items: center; /* Centramos verticalmente */
-}
-
-/* Ajustamos los márgenes de los iconos según sea necesario */
-.icono-menu {
-    margin-left: 0;
-}
-
-.icono-buscar {
-    margin-left: 10px;
-}
-
-.icono-carro {
-    margin-right: 10px;
-}
-
-.icono-usuario {
-    margin-right: 0;
 }
 
 /* Ajustamos el tamaño de las imágenes de los iconos */
 .botones-header img {
     width: 100%; /* Establecemos un tamaño para que quepan dentro de los botones */
     height: auto; /* Mantenemos la relación de aspecto */
+}
+
+.icono-menu,
+.icono-buscar,
+.icono-carro,
+.icono-usuario {
+    margin: 0 10px; /* Espacio entre los iconos */
 }
 
 .marca-registrada {
@@ -96,6 +86,7 @@ header {
     font-size: 80px;
     font-weight: bold;
     opacity: 0.8;
+    padding-right: 430px;
     vertical-align: middle;
     text-align: center;
     line-height: 100px; /*Aca estoy centrando el texto dentro del botón*/
@@ -211,13 +202,37 @@ a {
 footer {
     height: max-content;
     background-color: #f9f9f9;
+    color: #474747;
+    padding: 20px; /* Espacio alrededor del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.center {
+    flex: 2;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.right {
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.right a {
+    display: block; /* Cambiamos el display a block para que cada icono esté en una línea */
+    margin-bottom: 5px; /* Espacio entre los iconos de las redes sociales */
+    margin-left: 300px;
 }
 
 .titulo-footer {
     font-family: "Abril Fatface";
     font-size: 150px;
     font-weight: 100;
-    color: #666666;
+    color: #474747;
     text-align: center;
 }
 
