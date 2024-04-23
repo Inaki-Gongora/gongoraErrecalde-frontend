@@ -49,13 +49,11 @@ main {
   vertical-align: middle;
 }
 
-.botones-header :hover{
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+
+
+.contacto-texto{
+  font-size: 40px;
 }
-
-
 
 .logo-marca:visited {
   color: black;

@@ -53,7 +53,21 @@
     transition: opacity 0.2s;
   }
   
+  .botones-header :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
   
+  .div-contacto{
+    float: left;
+    
+  }
+
+  .contacto-texto{
+    font-size: 40px;
+    font-family: "Advent Pro";
+  }
   
   .logo-marca:visited {
     color: black;
