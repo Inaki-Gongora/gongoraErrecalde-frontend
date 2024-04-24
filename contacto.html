@@ -8,6 +8,7 @@
     <title>Zephyr - Contacto</title>
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styleAnillos.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,11 +22,15 @@
       .sec1{
         display: flex;
         justify-content: center;
+        margin-top: -100px;
+        transform: scale(0.8,0.8);
       }
 
       .sec2{
         display: flex;
         justify-content: center;
+        margin-top: -50px;
+        transform: scale(0.8,0.8);
       }
 
     </style>
@@ -35,7 +40,7 @@
     <header id="header" style="transition: top 0.5s ease;">
         <div class="div-contacto">
             <a href="contacto.html" class="contacto-a" target="_blank">
-                <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+                <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
             </a>
         </div>
         <div class="botones-header">
@@ -44,11 +49,15 @@
                 <img src="multimedia/buscar.png" alt="buscar">
             </button>
 
-            <button class="icono-carro">
-                <img src="multimedia/carro.png" alt="carro">
+            <button class="icono-carro" id="icono-carro">
+              <a href="carro.html" target="_blank">
+                  <img src="multimedia/carro.png" alt="carro">
+              </a>
             </button>
-            <button class="icono-usuario">
-                <img src="multimedia/user.png" alt="usuario">
+            <button class="icono-usuario" id="icono-usuario">
+              <a href="login.html" target="_blank">
+                  <img src="multimedia/user.png" alt="usuario">
+              </a>
             </button>
             <button class="icono-menu">
               <img src="multimedia/menu.png" alt="menu">
@@ -76,3 +85,8 @@
           ZEPHYR<span class="marca-registrada">&reg;</span>
       </h1>
     </footer>
+    <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>

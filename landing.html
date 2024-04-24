@@ -8,6 +8,7 @@
     <title>Zephyr - Inicio</title>
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styleLanding.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,11 +17,15 @@
 </head>
 
 <body>
+    <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     <section class="fondo">
         <header id="header" style="transition: top 0.5s ease;">
             <div class="div-contacto">
                 <a href="contacto.html" class="contacto-a" target="_blank">
-                    <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+                    <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
                 </a>
             </div>
             <div class="botones-header" id="botones-header">              
@@ -35,7 +40,9 @@
                     </a>
                 </button>
                 <button class="icono-usuario" id="icono-usuario">
-                    <img src="multimedia/user.png" alt="usuario">
+                    <a href="login.html" target="_blank">
+                        <img src="multimedia/user.png" alt="usuario">
+                    </a>
                 </button>
                 <button class="icono-menu" id="icono-menu">
                     <img src="multimedia/menu.png" alt="menu">
@@ -49,7 +56,7 @@
                     ZEPHYR<span class="marca-registrada">&reg;</span>
                 </h1>
                 <div class="nueva-coleccion">
-                    <p class="nueva-coleccion-texto">
+                    <p class="nueva-coleccion-texto wow slideInLeft">
                         NUEVA COLECCIÓN - 2024
                     </p>
                 </div>
@@ -80,6 +87,7 @@
     </footer>
 
     <script src="scriptLanding.js"></script>
+    
 </body>
 
 </html>
