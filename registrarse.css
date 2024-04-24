@@ -19,111 +19,125 @@
         "wdth" 100;
 }
 
+.div-contacto{
+    float: left;
+    margin-left: 80px;
+    height: 100px;
+    
+}
+
+.contacto-texto{
+    font-size: 35px;
+    font-family: "Advent Pro";
+    margin-top: 50px;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+  
+.contacto-texto::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+}
+  
+.contacto-texto:hover::before {
+    width: 100%;
+}
+  
+.contacto-a,.contacto-a:visited{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+  
+.contacto-a:hover{
+    opacity: 0.6; 
+    transition: all 0.2s;
+}
+  
+main {
+    margin-top: 150px;
+}
+  
 header {
-    display: flex;
-    background-color: #f9f9f9;
-    opacity: 0.85; 
+    background-color: #F9F9F9;
     height: 100px;
     width: auto;
     position: fixed;
-    top: 0; /* Establece el header en la parte superior de la página */
+    top: 0; 
     left: 0;
-    right: 0; /* Para que ocupe todo el ancho de la página */
+    right: 0; 
     z-index: 2;
     border-bottom: 1px solid #000;
-    justify-content: space-between; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    opacity: 0.85;
+    
 }
-
+  
+  
 .botones-header {
-    margin-left: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 470px; /* Agregamos un padding a los extremos */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    transform: scale(0.7,0.7);
+    float: right;
+  
 }
-
+  
+  
 .botones-header button {
-    width: 49px; /* Ancho fijo para los botones */
-    height: 49px; /* Alto fijo para los botones */
+    height: 100px;
     border: none;
-    background-color: #f9f9f9;
-    opacity: 0.9; 
-    display: flex;
-    align-items: center; /* Centramos verticalmente */
+    transform: scale(0.7,0.7);
+    vertical-align: middle;
 }
-
-/* Ajustamos el tamaño de las imágenes de los iconos */
-.botones-header img {
-    width: 100%; /* Establecemos un tamaño para que quepan dentro de los botones */
-    height: auto; /* Mantenemos la relación de aspecto */
-}
-
-.icono-menu,
-.icono-buscar,
-.icono-carro,
-.icono-usuario {
-    margin: 0 10px; /* Espacio entre los iconos */
-}
-
-.marca-registrada {
-    font-size: 40px; /* Ajustamos el tamaño del logo de la marca registrada */
-    vertical-align: bottom; /* Ajustamos la alineación vertical */
-}
-
-
+  
 .botones-header :hover{
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.2s;
 }
-
-.logo-marca {
-    color: black;
-    text-decoration: none;
-    font-family: "Abril Fatface", serif;
-    font-size: 80px;
-    font-weight: bold;
-    opacity: 0.8;
-    padding-right: 430px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 100px; /*Aca estoy centrando el texto dentro del botón*/
+  
+.icono-menu,.icono-buscar,.icono-carro,.icono-usuario {
+    background: none;
 }
 
-.titulo-landing-main {
+.logo-marca:visited {
     color: black;
     text-decoration: none;
-    font-family: "Times New Roman";
-    font-size: 250px;
-    opacity: 0.8;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
-    z-index: 0;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    position: fixed;
-    opacity: 0.55;
 }
-
-.logo-marca-landing {
+  
+.marca-registrada {
+    font-size: 40px;
+    vertical-align:bottom;
+}
+  
+.zephyr-grande{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: "Times New Roman";
     font-size: 80px;
-    opacity: 0.8;
+    opacity: 0.9;
     vertical-align: middle;
     text-align: center;
     line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
     z-index: 3;
     transform: translateX(-50%);
-    top: 4.5%;
+    top: 30px;
     left: 50%;
     position: fixed;
     opacity: "";
+}
+  
+.zephyr-grande:hover{
+    opacity: 0.65;
+}
+  
+.zephyr-grande:active{
+    opacity: 0.8;
 }
 
 html, body {

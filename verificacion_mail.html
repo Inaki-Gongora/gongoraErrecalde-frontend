@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title>Zephyr - Usuario</title>
     <link rel="stylesheet" href="verificacion_mail.css"> <!-- Importamos solo el CSS proporcionado -->
+    <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styleLanding.css">
     <style>
         body {
             margin: 0;
@@ -22,22 +24,30 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
+    <header id="header" style="transition: top 0.5s ease;">
+        <div class="div-contacto">
+          <a href="contacto.html" class="contacto-a" target="_blank">
+              <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+          </a>
+        </div>
         <div class="botones-header">
-            <a href="landing.html" class="logo-marca" target="_blank" id="contenedor-titulo">ZEPHYR<span class="marca-registrada">&reg;</span></a>
-            <button class="icono-menu" id="icono-menu">
-                <img src="multimedia/menu.png" alt="menu">
-            </button>
-            <button class="icono-buscar" id="icono-buscar">
+            <button class="icono-buscar">
                 <img src="multimedia/buscar.png" alt="buscar">
             </button>
-            <button class="icono-carro" id="icono-carro">
+
+            <button class="icono-carro">
                 <img src="multimedia/carro.png" alt="carro">
             </button>
-            <button class="icono-usuario" id="icono-usuario">
+            <button class="icono-usuario">
                 <img src="multimedia/user.png" alt="usuario">
             </button>
+            <button class="icono-menu">
+              <img src="multimedia/menu.png" alt="menu">
+            </button>
         </div>
+        <a href="landing.html" class="logo-marca" id="logo-marca" target="_blank">
+          <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
+        </a>
     </header>
 
     <!-- Contenido del inicio de sesión -->
