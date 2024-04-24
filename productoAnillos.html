@@ -17,10 +17,12 @@
 
 <body>
     <header id="header" style="transition: top 0.5s ease;">
+        <div class="div-contacto">
+            <a href="contacto.html" class="contacto-a" target="_blank">
+                <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+            </a>
+        </div>
         <div class="botones-header">
-            <button class="icono-menu">
-                <img src="multimedia/menu.png" alt="menu">
-            </button>
             <button class="icono-buscar">
                 <img src="multimedia/buscar.png" alt="buscar">
             </button>
@@ -31,44 +33,16 @@
             <button class="icono-usuario">
                 <img src="multimedia/user.png" alt="usuario">
             </button>
+            <button class="icono-menu">
+              <img src="multimedia/menu.png" alt="menu">
+            </button>
         </div>
         <a href="landing.html" class="logo-marca" id="logo-marca" target="_blank">
           <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
         </a>
     </header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const header = document.getElementById('header');
-    const tituloProducto = document.querySelector('.titulo-producto');
-    const zephyrGrande = document.getElementById('zephyr-grande');
-    const logoMarca = document.getElementById('logo-marca');
-    header.style.transition = 'none';
-    tituloProducto.style.transition = 'none';
-    zephyrGrande.style.transition = 'none';
-    function devolverAnimaciones() {
-      header.style.transition = 'all 0.5s ease'
-      tituloProducto.style.transition = 'all 0.5s ease'
-      zephyrGrande.style.transition = 'all 0.5s ease';
-    }
-
-    setTimeout(devolverAnimaciones, 5)
-    function verificarPosicion() {
-      if (window.pageYOffset === 0) {
-        header.style.top = "-100px";
-        tituloProducto.classList.add('titulo-producto-full');
-        zephyrGrande.style.top = '-100px'
-      }
-      else {
-        header.style.top = "0";
-        tituloProducto.classList.remove('titulo-producto-full');
-        zephyrGrande.style.top = '4.5%'
-      }
-    }
-        window.addEventListener('scroll', verificarPosicion);
-        window.addEventListener('load', verificarPosicion);
-    });
-    </script>
+    <script src="scriptProductos.js"></script>
     <main>
       <div class="titulo-producto">
         <h1 class="anillos-titulo">ANILLOS</h1>
