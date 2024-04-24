@@ -151,7 +151,7 @@ html, body {
     justify-content: center; /* Centramos horizontalmente */
     align-items: center; /* Centramos verticalmente */
     min-height: calc(100vh - 200px); /* Usamos min-height en lugar de height */
-    font-family: "Abril Fatface", serif;
+    font-family: "Advent Pro", serif;
     margin-top: auto; /* Centramos verticalmente respecto al encabezado */
     margin-bottom: auto; /* Centramos verticalmente respecto al pie de página */
     text-align: center; /* Añadimos text-align: center para centrar el contenido */
@@ -174,7 +174,7 @@ html, body {
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    font-family: "Abril Fatface", serif; /* Cambiamos la tipografía */
+    font-family: "Advent Pro", serif; /* Cambiamos la tipografía */
 }
 
 p {
@@ -215,50 +215,26 @@ a {
 
 footer {
     height: max-content;
-    background-color: #f9f9f9;
-    color: #474747;
-    padding: 20px; /* Espacio alrededor del contenido */
-    opacity: 0.9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left, .right {
-    flex: 1;
-}
-
-.center {
-    flex: 2;
-    text-align: left; /* Alinear texto a la izquierda */
-}
-
-.right {
-    text-align: left; /* Alinear texto a la izquierda */
-}
-
-.right a {
-    display: block; /* Cambiamos el display a block para que cada icono esté en una línea */
-    margin-bottom: 5px; /* Espacio entre los iconos de las redes sociales */
-    margin-left: 300px;
-}
-
-.titulo-footer {
+    background-color: #403F3F;
+  }
+  
+  .titulo-footer {
     font-family: "Abril Fatface";
     font-size: 150px;
     font-weight: 100;
-    color: #474747;
+    color: white;
     text-align: center;
-}
+  }
 
 .lorems {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #666666;
+    color: #fff;
     font-family: "Advent Pro";
     font-size: 16px;
     font-weight: 400; 
+    opacity: 0.8;
     line-height: normal;
 }
 

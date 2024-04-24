@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="registrarse.css"> <!-- Importamos solo el CSS proporcionado -->
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styleLanding.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 160vh;
             background-image: url('multimedia/fondo-landing.png');
             background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la página */
             background-position: center; /* Centra el fondo horizontal y verticalmente */
@@ -26,8 +28,8 @@
     <!-- Encabezado -->
     <header id="header" style="transition: top 0.5s ease;">
         <div class="div-contacto">
-          <a href="contacto.html" class="contacto-a" target="_blank">
-              <p class="contacto-texto" id="contacto-texto">CONTACTENOS</p>
+          <a href="contacto.html" class="contacto-a">
+              <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
           </a>
         </div>
         <div class="botones-header">
@@ -45,7 +47,7 @@
               <img src="multimedia/menu.png" alt="menu">
             </button>
         </div>
-        <a href="landing.html" class="logo-marca" id="logo-marca" target="_blank">
+        <a href="landing.html" class="logo-marca" id="logo-marca">
           <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
         </a>
     </header>
@@ -63,24 +65,19 @@
                     <button type="submit" class="login-button">Registrarse</button>
                 </div>
             </form>
-            <p>¿Yo tienes cuenta? <a href="./iniciar.html" class="crear-cuenta">Iniciar sesión</a></p>
+            <p>¿Yo tienes cuenta? <a href="./login.html" class="crear-cuenta">Iniciar sesión</a></p>
         </div>
     </div>
 
     <!-- Pie de página -->
     <footer>
-        <div class="left">
-            <p>© 2024 Zephyr. Todos los derechos reservados.</p>
-        </div>
+        <p class="lorems">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
         <h1 class="titulo-footer">
             ZEPHYR<span class="marca-registrada">&reg;</span>
         </h1>
-        <div class="right">
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="mail-icon.png" alt="Mail"></a>
-        </div>
     </footer>
 </body>
 </html>
