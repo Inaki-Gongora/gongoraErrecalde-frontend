@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 130vh;
-    background-image: url("multimedia/fondo-landing.png");
+    background-image: url("multimedia/Firefly\ Crea\ una\ imagen\ de\ un\ anillo\ elegante\,\ una\ rama\ con\ flores\ blancas\ debe\ pasar\ por\ adentro\ de\ \(5\).jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -163,7 +163,7 @@ html, body {
     justify-content: center; 
     align-items: center; 
     min-height: calc(100vh - 200px); 
-    font-family: "Advent Pro";
+    font-family: "Times New Roman";
     margin-top: auto; 
     margin-bottom: auto; 
     text-align: center; 
@@ -185,7 +185,7 @@ html, body {
 
 h1 {
     font-size: 24px;
-    font-family: "Advent Pro"; 
+    font-family: "Times New Roman"; 
     margin-bottom: 10px;
 }
 
@@ -223,7 +223,7 @@ a {
 
 footer {
     height: max-content;
-    background-color: #474747;
+    background-color: #2E2721;
     color: #fff;
     padding: 20px; 
     display: flex;
