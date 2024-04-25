@@ -4,6 +4,18 @@
     box-sizing: content-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+    background-image: url("multimedia/fondo-landing.png");
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la página */
+    background-position: center; /* Centra el fondo horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
 .abril-fatface-regular {
     font-family: "Abril Fatface", serif;
     font-weight: lighter;
@@ -173,19 +185,14 @@ html, body {
 
 h1 {
     font-size: 24px;
-    margin-bottom: 20px;
     font-family: "Advent Pro"; /* Cambiamos la tipografía */
-}
-
-p {
-    margin-top: 10px; /* Añadimos espacio entre el párrafo y el botón */
+    margin-bottom: 10px;
 }
 
 input {
     width: calc(100% - 125px); 
     padding: 10px;
     margin-bottom: 10px;
-    margin-right: 10px; 
     border: 1px solid #ccc; /* Borde del input */
     border-radius: 5px;
 }
@@ -195,6 +202,7 @@ input {
     background-color: #093b5d; /* Color de fondo del botón */
     color: #fff;
     border: none;
+    margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -215,111 +223,53 @@ a {
 
 footer {
     height: max-content;
-    background-color: #403F3F;
+    background-color: #474747;
+    color: #fff;
+    padding: 20px; /* Espacio alrededor del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  }
+.botones-footer {
+    display: flex;
+    transform: scale(0.65,0.65);
+}
   
-  .titulo-footer {
+.botones-footer button {
+    border: none;
+    transform: scale(0.7,0.7);
+    vertical-align: middle;
+    background: none;
+    margin-left: 10px;
+}
+  
+.botones-footer button img{
+    height: 90px; /* Ajusta el tamaño de los iconos según sea necesario */
+    width: auto;
+}
+
+.botones-footer :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+  
+.icono-instagram,.icono-facebook,.icono-tiktok,.icono-youtube {
+    background: none;
+    height: 100px;
+}
+
+.titulo-footer {
+    display: flex;
+    justify-content: center;
     font-family: "Abril Fatface";
     font-size: 150px;
     font-weight: 100;
-    color: white;
-    text-align: center;
-  }
-
-.lorems {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
     color: #fff;
-    font-family: "Advent Pro";
-    font-size: 16px;
-    font-weight: 400; 
-    opacity: 0.8;
-    line-height: normal;
 }
 
-.titulo-producto-full {
-    transform: scale(1.1,1.1);
-    margin-top: 20px; /* Ajusta este valor según sea necesario */
-    justify-content: center;
-    align-items: center;
-    margin-bottom:170px;
-    transition: all 0.5s ease;
-}
-
-.nueva-coleccion {
-    display: flex;
-    width: 100%;
-    padding-top: 608px;
-    padding-left: 5px;
-}
-
-.nueva-coleccion-texto {
-    color: rgb(233, 233, 233);
-    opacity: 0.7;
-    font-size: 35px;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.fondo {
-    height: 654px;
-    background-image: url(multimedia/fondo-landing.png);
-    background-size: cover; 
-    background-position-y: -145px;
-    background-repeat: no-repeat; 
-}
-
-.seccion-ver-productos {
-    display: flex;
-    justify-content: space-between;
-    height: 700px;
-}
-
-.ver-anillos {
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-    padding: 200px;
-    border: 1px solid black;
-}
-
-.ver-collares {
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    padding: 200px;
-    border: 1px solid black;
-}
-
-.ver-productos {
-    display: flex;
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    /* font-style: italic; */
-    width: fit-content;
-    height: max-content;
-    border: none;
-    border-radius: 5px;
-    padding: 0;
-    text-decoration: none;
-    opacity: 0.95;
-    padding-top: 350px;
-    width: max-content;
-} 
-
-.ver-productos:hover {
-    opacity: 0.7;
-    transition: all 0.2s;
-}
-
-.ver-productos:visited {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    opacity: 0.95;
+.derechos {
+    font-size: 20px;
+    padding: 20px;
 }
