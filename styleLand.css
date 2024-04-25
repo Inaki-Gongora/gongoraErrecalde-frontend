@@ -11,9 +11,9 @@ body {
     flex-direction: column;
     min-height: 130vh;
     background-image: url("multimedia/fondo-landing.png");
-    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la página */
-    background-position: center; /* Centra el fondo horizontal y verticalmente */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .abril-fatface-regular {
@@ -135,7 +135,7 @@ header {
     opacity: 0.9;
     vertical-align: middle;
     text-align: center;
-    line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+    line-height: 50%; 
     z-index: 3;
     transform: translateX(-50%);
     top: 30px;
@@ -160,13 +160,13 @@ html, body {
 .container {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center; /* Centramos verticalmente */
-    min-height: calc(100vh - 200px); /* Usamos min-height en lugar de height */
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 200px); 
     font-family: "Advent Pro";
-    margin-top: auto; /* Centramos verticalmente respecto al encabezado */
-    margin-bottom: auto; /* Centramos verticalmente respecto al pie de página */
-    text-align: center; /* Añadimos text-align: center para centrar el contenido */
+    margin-top: auto; 
+    margin-bottom: auto; 
+    text-align: center; 
 }
 
 
@@ -177,15 +177,15 @@ html, body {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Agregamos un ancho fijo al contenedor de inicio de sesión */
+    width: 400px; 
     display: flex;
-    flex-direction: column; /* Alinear elementos de forma vertical */
-    align-items: center; /* Centrar horizontalmente los elementos */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 h1 {
     font-size: 24px;
-    font-family: "Advent Pro"; /* Cambiamos la tipografía */
+    font-family: "Advent Pro"; 
     margin-bottom: 10px;
 }
 
@@ -193,13 +193,13 @@ input {
     width: calc(100% - 125px); 
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc; /* Borde del input */
+    border: 1px solid #ccc; 
     border-radius: 5px;
 }
 
 .login-button {
     transition: transform 0.5s;
-    background-color: #093b5d; /* Color de fondo del botón */
+    background-color: #093b5d; 
     color: #fff;
     border: none;
     margin-bottom: 10px;
@@ -218,14 +218,14 @@ a {
 }
 
 .crear-cuenta:hover {
-    color: #00538f; /* Cambia el color a rojo cuando el cursor pasa por encima */
+    color: #00538f; 
 }
 
 footer {
     height: max-content;
     background-color: #474747;
     color: #fff;
-    padding: 20px; /* Espacio alrededor del contenido */
+    padding: 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -245,7 +245,7 @@ footer {
 }
   
 .botones-footer button img{
-    height: 90px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 90px; 
     width: auto;
 }
 
