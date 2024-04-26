@@ -9,11 +9,12 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 140vh;
+    min-height: 145vh;
     background-image: url("multimedia/Firefly\ Crea\ una\ imagen\ de\ un\ anillo\ elegante\,\ una\ rama\ con\ flores\ blancas\ debe\ pasar\ por\ adentro\ de\ \(5\).jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    overflow-x: hidden;
 }
 
 .abril-fatface-regular {
@@ -218,95 +219,20 @@ input {
     cursor: pointer;
 }
 
+.recuperar-button {
+    color: #fff;
+    text-decoration: none;
+}
+
 .login-button:hover {
     transform: scale(1.05);
 }
 
-a {
+.crear-cuenta {
     color: #093b5d;
     text-decoration: none;
 }
 
 .crear-cuenta:hover {
     color: #00538f; 
-}
-
-footer {
-    height: max-content;
-    background-color: #2E2721;
-    color: #fff;
-    padding: 20px; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    font-family: "Advent Pro", sans-serif;   
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.botones-footer {
-    display: flex;
-    align-items: center;
-    width: 50vh;
-}
-  
-.botones-footer img{
-    height: 40px;
-    width: auto;
-}
-
-.botones-footer :hover{
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-}
-  
-.icono-instagram,.icono-facebook,.icono-tiktok,.icono-youtube {
-    padding: 10px;
-    background: none;
-}
-
-.icono-instagram {
-    padding-left: 50px;
-}
-
-.seguinos {
-    flex-direction: row;
-}
-
-.titulo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Abril Fatface";
-    font-size: 150px;
-    font-weight: 100;
-    color: #fff;
-}
-
-.derechos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 20px;
-    width: 50vh;
-}
-
-.div-titulo-footer{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.column-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
-}
-
-.seguinos {
-    padding-bottom: 5px;
 }

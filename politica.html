@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zephyr - Usuario</title>
-    <link rel="stylesheet" href="styleLand.css">
-    <link rel="stylesheet" href="styleFooter.css">
+    <title>Zephyr - Contacto</title>
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleFooter.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      .desarrollo{
+        font-size: 100px;
+      }
 
+      .sec1{
+        display: flex;
+        justify-content: center;
+        margin-top: -100px;
+        transform: scale(0.8,0.8);
+      }
+
+      .sec2{
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+        transform: scale(0.8,0.8);
+      }
+
+    </style>
+</head>
+
+<body>
     <header id="header" style="transition: top 0.5s ease;">
         <div class="div-contacto">
-          <a href="contacto.html" class="contacto-a">
-              <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
-          </a>
+            <a href="contacto.html" class="contacto-a">
+                <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
+            </a>
         </div>
         <div class="botones-header">
+            
             <button class="icono-buscar">
                 <img src="multimedia/buscar.png" alt="buscar">
             </button>
 
-            <button class="icono-carro">
-                <img src="multimedia/carro.png" alt="carro">
+            <button class="icono-carro" id="icono-carro">
+              <a href="carro.html">
+                  <img src="multimedia/carro.png" alt="carro">
+              </a>
             </button>
-            <button class="icono-usuario">
-                <img src="multimedia/user.png" alt="usuario">
+            <button class="icono-usuario" id="icono-usuario">
+              <a href="login.html">
+                  <img src="multimedia/user.png" alt="usuario">
+              </a>
             </button>
             <button class="icono-menu">
               <img src="multimedia/menu.png" alt="menu">
-            </button>
+          </button>
         </div>
         <a href="landing.html" class="logo-marca" id="logo-marca">
           <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
         </a>
     </header>
-
-    <div class="container">
-        <div class="login-container">
-            <h1>Código de verificación</h1>
-            <form>
-                <input type="text" name="Código" placeholder="XXX XXX" required>
-                <button type="submit" class="login-button">Verificar</button>
-            </form>
-           <a href="./recuperar_contra.html" class="crear-cuenta"> < Volver </a></p>
-        </div>
-    </div>
-
+    <main>
+      <section class="sec1">
+        <img src="multimedia/offline.png" alt="">
+      </section>
+      <section class="sec2">
+        <h1 class="desarrollo">Página en desarrollo</h1>   
+      </section>
+        
+    </main>
     <footer>
         <div class="footer-izq">
             <p>E-mail de contacto:</p>
             <p>zephyr.ent@contact.zephyr.com</p>
-            <br>
             <p>Número de teléfono:</p>
             <p>+54 (261)3865948</p>
-            <br>
+            <a class="info-footer" href="./politica.html"><p class="politica-texto"></p>política de privacidad</p></a>
             <p>Encontranos en:</p>
-            <p>Perito Moreno 2397 y Artigas, Godoy Cruz,</p>
-            <p>Mendoza, Argentina</p>
+            <p>Perito Moreno 2397 y Artigas, Godoy Cruz, Mendoza.</p>
         </div>
         <div class="div-titulo-footer">
             <h1 class="titulo-footer">
@@ -79,4 +103,3 @@
         </div>
     </footer>
 </body>
-</html>
