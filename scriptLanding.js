@@ -3,9 +3,17 @@ const header = document.getElementById('header');
         const botonesHeader = document.getElementById ('botones-header')
         const contactoTexto = document.getElementById ('contacto-texto')
         const horizontalRule = document.getElementById ('horizontal-rule')
+        const menuDesplegable = document.getElementById ('menu-desplegable')
+        const botonMenu = document.getElementById ('icono-menu')
+        const botonBuscar = document.getElementById ('icono-buscar')
+        const lupaBuscar = document.getElementById ('lupa-buscar')
         tituloLandingMain.style.transition = 'all 0.5s ease';
         botonesHeader.style.transition = 'all 0.5s ease';
         contactoTexto.style.transition = 'all 0.5s ease';
+        menuDesplegable.style.transition = 'all 0.5s ease';
+        botonMenu.style.transition = 'all 0.5s ease';
+        botonBuscar.style.transition = 'all 0.5s ease';
+        lupaBuscar.style.transition = 'all 0.5s ease';
         header.style.transition = 'none';
         function devolverAnimaciones() {
             header.style.transition = 'all 0.5s ease';
@@ -24,7 +32,13 @@ const header = document.getElementById('header');
                 header.style.borderBottom = 'none'
                 contactoTexto.style.opacity = '0'
                 contactoTexto.style.fontSize = '30px'
-                contactoTexto.style.cursor = 'default'              
+                contactoTexto.style.cursor = 'default'
+                menuDesplegable.style.right = ''
+                botonMenu.style.rotate = '' 
+                lupaBuscar.style.marginRight = '' 
+                lupaBuscar.style.rotate = '' 
+                botonMenuActivo = false
+                botonBuscarActivo = false
             } else {                
                 tituloLandingMain.classList.remove('titulo-landing-main');
                 tituloLandingMain.classList.add('logo-marca-landing');
@@ -40,8 +54,33 @@ const header = document.getElementById('header');
                 botonesHeader.style.transform = "scale(0.65,0.65)"
                 contactoTexto.style.opacity = ''; 
                 contactoTexto.style.fontSize = ''
-                contactoTexto.style.cursor = ''  
+                contactoTexto.style.cursor = ''
+                     
             }
         }
+        let botonMenuActivo = false
+        let botonBuscarActivo = false
+        botonMenu.addEventListener('click', function() {
+            botonMenuActivo = !botonMenuActivo;
+            if (botonMenuActivo) {
+                menuDesplegable.style.right = '0px' 
+                botonMenu.style.rotate = '-90deg'
+            } else if (!botonMenuActivo) {
+                menuDesplegable.style.right = ''
+                botonMenu.style.rotate = ''     
+            }
+            })
+        botonBuscar.addEventListener('click', function() {
+            botonBuscarActivo = !botonBuscarActivo;
+            if (botonBuscarActivo) {
+                lupaBuscar.style.marginRight = '550px' 
+                lupaBuscar.style.rotate = '95deg'
+                tituloLandingMain.style.left = '32%' 
+            } else if (!botonBuscarActivo) {
+                lupaBuscar.style.marginRight = ''
+                lupaBuscar.style.rotate = '' 
+                tituloLandingMain.style.left = '' 
+            }
+            })
         window.addEventListener('scroll', verificarPosicion);
         window.addEventListener('load', verificarPosicion);

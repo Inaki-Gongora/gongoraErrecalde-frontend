@@ -122,13 +122,8 @@ body {
 
 .horizontal-rule {
   border: none;
-  border-top: 3px solid black;
   position: fixed;
   top: 100px
-}
-
-.horizontalRule {
-  border-top: 1px solid black;
 }
 
 footer {
@@ -218,6 +213,27 @@ footer {
   opacity: "";
 }
 
+.nuestros-productos{
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  box-shadow: inset 0 10px 10px -9px rgba(0, 0, 0, 0.7);
+  margin-top: 12px;
+}
+
+.div-nuestros-productos{
+  text-align: center;
+  align-items: center;
+}
+  
+
+.nuestros-productos-texto{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  color: #333;  
+}
+
 .seccion-ver-productos {
   display: flex;
   justify-content: space-between;
@@ -301,16 +317,18 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 200px;
-  border: 1px solid black;
   background-image: url(multimedia/ver-anillos.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.7);
+  transition: all 0.15s;
 }
 
 .ver-anillos:hover {
   animation: agrandarImagen 0.15s forwards; /* Aplicar animación al hacer hover */
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.8);
+  transition: all 0.15s;
 }
 
 .ver-anillos:not(:hover){
@@ -325,17 +343,19 @@ footer {
   padding-right: 223.5px;
   padding-bottom: 200px;
   padding-left: 223.5px;
-  border: 1px solid black;;
   background-image: url(multimedia/ver-aros.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.7);
+  transition: all 0.15s;
 }
 
 .ver-aros:hover {
   animation: agrandarImagen 0.15s forwards; /* Aplicar animación al hacer hover */
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.8);
+  transition: all 0.15s;
 }
 
 .ver-aros:not(:hover){
@@ -384,11 +404,24 @@ footer {
   width: 100%;
 }
 
+.nuestros-productos{
+  background-color: rgb(223, 223, 223);
+}
+
 .seccion-ver-productos{
   background-color: rgb(223, 223, 223);
 }
 
 .icono-menu,.icono-buscar,.icono-carro,.icono-usuario{
   background: none;
-  
+}
+
+.menu-desplegable {
+  position: fixed;
+  height: 600px;
+  width: 320px;
+  right: -320px;
+  top: 101px;
+  background-color: rgb(180, 180, 180);
+  z-index: 4;
 }
