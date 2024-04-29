@@ -1,4 +1,4 @@
-const header = document.getElementById('header');
+        const header = document.getElementById('header');
         const tituloLandingMain = document.getElementById('titulo-landing-main');
         const botonesHeader = document.getElementById ('botones-header')
         const contactoTexto = document.getElementById ('contacto-texto')
@@ -6,14 +6,15 @@ const header = document.getElementById('header');
         const menuDesplegable = document.getElementById ('menu-desplegable')
         const botonMenu = document.getElementById ('icono-menu')
         const botonBuscar = document.getElementById ('icono-buscar')
-        const lupaBuscar = document.getElementById ('lupa-buscar')
+        const botonCerrarMenu = document.getElementById ('boton-cerrar-menu')
+        const fondoDifuminar = document.getElementById ('fondo-menu')
         tituloLandingMain.style.transition = 'all 0.5s ease';
         botonesHeader.style.transition = 'all 0.5s ease';
+        fondoDifuminar.style.transition = 'backdrop-filter 0.5s ease';
         contactoTexto.style.transition = 'all 0.5s ease';
         menuDesplegable.style.transition = 'all 0.5s ease';
         botonMenu.style.transition = 'all 0.5s ease';
         botonBuscar.style.transition = 'all 0.5s ease';
-        lupaBuscar.style.transition = 'all 0.5s ease';
         header.style.transition = 'none';
         function devolverAnimaciones() {
             header.style.transition = 'all 0.5s ease';
@@ -35,10 +36,10 @@ const header = document.getElementById('header');
                 contactoTexto.style.cursor = 'default'
                 menuDesplegable.style.right = ''
                 botonMenu.style.rotate = '' 
-                lupaBuscar.style.marginRight = '' 
-                lupaBuscar.style.rotate = '' 
-                botonMenuActivo = false
-                botonBuscarActivo = false
+                fondoDifuminar.style.backdropFilter = ''
+                fondoDifuminar.style.zIndex = ''
+                document.body.style.overflow = ''
+                botonMenuActivo = false     
             } else {                
                 tituloLandingMain.classList.remove('titulo-landing-main');
                 tituloLandingMain.classList.add('logo-marca-landing');
@@ -58,29 +59,36 @@ const header = document.getElementById('header');
                      
             }
         }
+        
         let botonMenuActivo = false
-        let botonBuscarActivo = false
         botonMenu.addEventListener('click', function() {
             botonMenuActivo = !botonMenuActivo;
             if (botonMenuActivo) {
                 menuDesplegable.style.right = '0px' 
                 botonMenu.style.rotate = '-90deg'
-            } else if (!botonMenuActivo) {
-                menuDesplegable.style.right = ''
-                botonMenu.style.rotate = ''     
+                fondoDifuminar.style.backdropFilter = 'blur(4px)'
+                fondoDifuminar.style.zIndex = '6'
+                document.body.style.overflow = 'hidden'
+            } else {
+                fondoDifuminar.style.backdropFilter = ''
+                fondoDifuminar.style.zIndex = ''
+                document.body.style.overflow = ''
             }
-            })
-        botonBuscar.addEventListener('click', function() {
-            botonBuscarActivo = !botonBuscarActivo;
-            if (botonBuscarActivo) {
-                lupaBuscar.style.marginRight = '550px' 
-                lupaBuscar.style.rotate = '95deg'
-                tituloLandingMain.style.left = '32%' 
-            } else if (!botonBuscarActivo) {
-                lupaBuscar.style.marginRight = ''
-                lupaBuscar.style.rotate = '' 
-                tituloLandingMain.style.left = '' 
-            }
-            })
+            
+        } 
+        
+        )
+        botonCerrarMenu.addEventListener('click', function(){
+            menuDesplegable.style.right = '';
+            botonMenu.style.rotate = ''
+            botonMenuActivo = false
+            fondoDifuminar.style.backdropFilter = ''
+            fondoDifuminar.style.zIndex = ''
+            document.body.style.overflow = ''
+        })
+
         window.addEventListener('scroll', verificarPosicion);
         window.addEventListener('load', verificarPosicion);
+
+
+        
