@@ -6,6 +6,7 @@
         const menuDesplegable = document.getElementById ('menu-desplegable')
         const botonMenu = document.getElementById ('icono-menu')
         const botonBuscar = document.getElementById ('icono-buscar')
+        const botonUser = document.getElementById ('icono-usuario')
         const botonCerrarMenu = document.getElementById ('boton-cerrar-menu')
         const fondoDifuminar = document.getElementById ('fondo-menu')
         tituloLandingMain.style.transition = 'all 0.5s ease';
@@ -61,6 +62,7 @@
         }
         
         let botonMenuActivo = false
+        // Captura 1
         botonMenu.addEventListener('click', function() {
             botonMenuActivo = !botonMenuActivo;
             if (botonMenuActivo) {
@@ -78,6 +80,7 @@
         } 
         
         )
+        // Captura 1.5
         botonCerrarMenu.addEventListener('click', function(){
             menuDesplegable.style.right = '';
             botonMenu.style.rotate = ''
@@ -86,9 +89,30 @@
             fondoDifuminar.style.zIndex = ''
             document.body.style.overflow = ''
         })
-
+        // Captura 2
         window.addEventListener('scroll', verificarPosicion);
+        // Captura 3
         window.addEventListener('load', verificarPosicion);
+        // Captura 4
+        window.addEventListener("offline", function(){
+            console.log("Se perdió la conección a internet")
+        })
+        // Captura 5
+        window.addEventListener("online", function(){
+            console.log("Vuelves a estar conectado a internet")
+        })
+        // Captura 6
+        botonUser.addEventListener('click', function(){
+            window.location.href = 'login.html'
+        })
+        // Captura 7
+        tituloLandingMain.addEventListener ('mouseover', function(){
+            tituloLandingMain.style.opacity = '0.8'
+        })
+        // Captura 8
+        tituloLandingMain.addEventListener ('mouseout', function(){
+            tituloLandingMain.style.opacity = ''
+        })
 
 
         
