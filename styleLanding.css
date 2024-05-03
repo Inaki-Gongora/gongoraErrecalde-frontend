@@ -463,3 +463,20 @@ footer {
   backdrop-filter: blur(0px);
   z-index: -6;
 }
+
+.lista-menu{
+  list-style-type: none;
+  padding-left: 5vh;
+}
+
+.elemento-menu{
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 5vh;
+}
+
+.elemento-menu:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
