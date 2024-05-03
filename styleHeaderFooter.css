@@ -1,3 +1,7 @@
+  *{
+    scrollbar-width:none;
+  }
+  
   .abril-fatface-regular {
     font-family: "Abril Fatface", serif;
     font-weight: lighter;
@@ -127,27 +131,86 @@
 
   footer {
     height: max-content;
-    background-color: #403F3F;
-  }
+    background-color: #2E2721;
+    color: #fff;
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: "Advent Pro", sans-serif;   
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botones-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+}
   
-  .titulo-footer {
+.botones-footer img{
+    height: 30px;
+    width: auto;
+}
+
+.botones-footer :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+  
+.icono-instagram,.icono-facebook,.icono-tiktok,.icono-youtube {
+    padding: 10px;
+    background: none;
+}
+
+.seguinos {
+    flex-direction: row;
+}
+
+.titulo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Abril Fatface";
     font-size: 150px;
     font-weight: 100;
-    color: white;
+    color: #fff;
+}
+
+.footer-izq{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 50vh;
+}
+
+.div-titulo-footer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.seguinos {
+    padding-bottom: 5px;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
     text-align: center;
-  }
+}
 
-  .lorems {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #FFF;
-    font-family: "Advent Pro";
-    font-size: 16px;
-    font-weight: 400; 
-    line-height: normal;
-    opacity: 0.8;
-  }
-
-  
+.info-footer {
+    color: #fff;
+    text-decoration: none;
+}

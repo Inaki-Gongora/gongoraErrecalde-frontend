@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    scrollbar-width:none;
 }
   
 .abril-fatface-regular {
@@ -462,9 +463,3 @@ footer {
   backdrop-filter: blur(0px);
   z-index: -6;
 }
-
-*{
-  scrollbar-width:none;
-}
-
-
