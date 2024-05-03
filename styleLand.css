@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     min-height: 145vh;
     background-image: url("multimedia/Firefly\ Crea\ una\ imagen\ de\ un\ anillo\ elegante\,\ una\ rama\ con\ flores\ blancas\ debe\ pasar\ por\ adentro\ de\ \(5\).jpg");
-    background-size: cover; 
+    background-size: 120%; 
     background-position: center; 
     background-repeat: no-repeat; 
     overflow-x: hidden;
@@ -235,4 +235,11 @@ input {
 
 .crear-cuenta:hover {
     color: #00538f; 
+}
+
+.ingresar-codigo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
 }

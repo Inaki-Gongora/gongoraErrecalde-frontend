@@ -41,9 +41,9 @@
     <div class="container">
         <div class="login-container">
             <h1>Iniciar Sesión</h1>
-            <form>
-                <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
+            <form id="loginForm" onsubmit="return validarFormularioLogin()">
+                <input type="text" name="usuario" placeholder="Nombre de Usuario" id="nombreusuario">
+                <input type="password" name="password" placeholder="Contraseña" id="contraseñalogin">
                 <button type="submit" class="login-button">Iniciar sesión</button>
             </form>
             <a href="./registrarse.html" class="crear-cuenta">¿No tienes cuenta? </a>
@@ -81,5 +81,6 @@
             </div>
         </div>
     </footer>
+    <script src="validar-form.js"></script>
 </body>
 </html>

@@ -42,11 +42,12 @@
     <div class="container">
         <div class="login-container">
             <h1>Código de verificación</h1>
-            <form>
-                <input type="text" name="Código" placeholder="XXX XXX" required>
+            <p class="ingresar-codigo">Ingresa el código de verificación que enviamos a tu mail</p>
+            <form id="verificacionForm" onsubmit="return validarFormularioVerificacion()">
+                <input type="text" name="Código" placeholder="XXX XXX" id="codigoverificacion">
                 <button type="submit" class="login-button">Verificar</button>
             </form>
-           <a href="./recuperar_contra.html" class="crear-cuenta"> < Volver </a></p>
+           <a href="javascript:history.back()" class="crear-cuenta"> < Volver</p></a>
         </div>
     </div>
 
@@ -78,5 +79,6 @@
             </div>
         </div>
     </footer>
+    <script src="validar-form.js"></script>
 </body>
 </html>

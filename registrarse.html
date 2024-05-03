@@ -42,12 +42,12 @@
     <div class="container">
         <div class="login-container">
             <h1>Registrarse</h1>
-            <form>
-                <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-            </form>
+            <form id="registroForm" onsubmit="return validarFormulario()">
+                <input type="text" name="usuario" placeholder="Nombre de Usuario" id="nombreregistrarse">
+                <input type="email" name="email" placeholder="Email" id="emailregistrarse">
+                <input type="password" name="password" placeholder="Contraseña" id="contraseñaregistrarse">
                 <button type="submit" class="login-button">Registrarse</button>
+            </form>
             <a href="./login.html" class="crear-cuenta">¿Ya tienes cuenta?</a>
         </div>
     </div>
@@ -80,5 +80,6 @@
             </div>
         </div>
     </footer>
+    <script src="validar-form.js"></script>
 </body>
 </html>

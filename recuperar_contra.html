@@ -42,11 +42,13 @@
     <div class="container">
         <div class="login-container">
             <h1>Recuperar Contraseña</h1>
-            <form>
-                <input type="text" name="Email" placeholder="Email de recuperación" size="40" required>
-                <button  class="login-button"><a href="./verificacion_mail.html" class="recuperar-button">Recuperar contraseña</a></button>
+            <form id="recuperarForm" onsubmit="return validarFormularioRecuperar()">
+                <input type="email" name="Email" placeholder="Email de recuperación" size="40" id="emailrecuperacion">
+                <button class="login-button">Recuperar contraseña</button>
             </form>
             <a href="./login.html" class="crear-cuenta">Iniciar sesión</a></p>
+            <br>
+            <a href="javascript:history.back()" class="crear-cuenta"> < Volver</p></a>
         </div>
     </div>
 
@@ -78,5 +80,6 @@
             </div>
         </div>
     </footer>
+    <script src="validar-form.js"></script>
 </body>
 </html>
