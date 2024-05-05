@@ -41,7 +41,7 @@ function validarFormularioRecuperar() {
 }
 
 function validarFormularioVerificacion() {
-    var codigo = document.getElementById("codigoverificacion").value;
+    let codigo = document.getElementById("codigoverificacion").value;
 
     if (codigo === "") {
         alert("Por favor ingresa el código de verificación.");
@@ -50,3 +50,27 @@ function validarFormularioVerificacion() {
 
     return true;
 }
+
+// Mostrar/Ocultar contraseña
+
+document.getElementById("showPassword").addEventListener("click", function() {
+    let contraseñalogin = document.getElementById("contraseñalogin");
+    if (contraseñalogin.getAttribute("type") === "password") {
+        contraseñalogin.setAttribute("type", "text");
+        document.getElementById("showPassword").src = "multimedia/invisible.png";
+    } else {
+        contraseñalogin.setAttribute("type", "password");
+        document.getElementById("showPassword").src = "multimedia/visible.png";
+    }
+});
+
+document.getElementById("showPassword").addEventListener("click", function() {
+    let contraseñaregistrarse = document.getElementById("contraseñaregistrarse");
+    if (contraseñaregistrarse.getAttribute("type") === "password") {
+        contraseñaregistrarse.setAttribute("type", "text");
+        document.getElementById("showPassword").src = "multimedia/invisible.png";
+    } else {
+        contraseñaregistrarse.setAttribute("type", "password");
+        document.getElementById("showPassword").src = "multimedia/visible.png";
+    }
+});

@@ -243,3 +243,15 @@ input {
     color: #333;
     margin-bottom: 15px;
 }
+
+.mostrarContra, .ocultarContra {
+    opacity: 0.7;
+    height: 17px;
+    width: auto;
+    padding: 10px;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    transform: translateX(-100%);
+    margin-top: 2px;
+}
