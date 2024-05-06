@@ -173,8 +173,8 @@ html, body {
 hr {
     border: none;
     border-top: 1px solid #ccc; 
-    margin: 10px 0; 
-    width: 137%;
+    margin: 10px 0 0 50px; 
+    width: 100%;
 }
 
 .carrito-container, .resumen-container, .detalles-container{
@@ -192,13 +192,13 @@ hr {
 }
 
 .carrito-container {
-    width: 700px; 
+    width: 1100px; 
     height: 600px;
 }
 
 .resumen-container {
-    width: 700px; 
-    height: auto;
+    width: 500px; 
+    height: 600px;
     margin-bottom: auto;
 }
 
@@ -213,13 +213,13 @@ hr {
 
 .botones-detalles {
     margin-top: 50px;
-    margin-left: -200px;
+    margin-left: -100px;
 }
 
 .img-detalles {
     float: left;
     max-width: 20%; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
     background: none;
 }
 
@@ -236,6 +236,64 @@ hr {
     opacity: 0.6;
     transition: opacity 0.2s;
 }
+
+.resumen-container h2 {
+    position: absolute;
+    width: 100px; 
+    text-align: left; 
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijar posición */
+    z-index: 1; /* Encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permitir desplazamiento */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo difuminado */
+}
+
+/* Contenido del modal */
+.modal-contenido {
+    background-color: #fefefe;
+    position: fixed; /* Posición fija para mantenerlo centrado */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 40px;
+}
+
+.modal-texto {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Botón de cierre */
+.cerrar {
+    position: absolute; /* Posición absoluta para estar sobre el contenido */
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 h1 {
     font-size: 24px;
