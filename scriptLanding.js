@@ -105,14 +105,5 @@
         botonUser.addEventListener('click', function(){
             window.location.href = 'login.html'
         })
-        // Captura 7
-        tituloLandingMain.addEventListener ('mouseover', function(){
-            tituloLandingMain.style.opacity = '0.8'
-        })
-        // Captura 8
-        tituloLandingMain.addEventListener ('mouseout', function(){
-            tituloLandingMain.style.opacity = ''
-        })
-
-
+  
         

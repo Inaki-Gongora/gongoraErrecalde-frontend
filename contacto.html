@@ -44,12 +44,10 @@
                 <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
             </a>
         </div>
-        <div class="botones-header">
-            
+        <div class="botones-header">           
             <button class="icono-buscar">
                 <img src="multimedia/buscar.png" alt="buscar">
             </button>
-
             <button class="icono-carro" id="icono-carro">
               <a href="carro.html">
                   <img src="multimedia/carro.png" alt="carro">
@@ -60,15 +58,60 @@
                   <img src="multimedia/user.png" alt="usuario">
               </a>
             </button>
-            <button class="icono-menu">
+            <button class="icono-menu" id="icono-menu">
               <img src="multimedia/menu.png" alt="menu">
-          </button>
+            </button>
         </div>
         <a href="landing.html" class="logo-marca" id="logo-marca">
           <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
         </a>
     </header>
     <main>
+      <div class="menu-desplegable" id="menu-desplegable">
+        <button class="cerrar-menu" id="boton-cerrar-menu">
+            <p class="x-cerrar-menu">
+                X
+            </p>
+        </button>
+        <ul class="lista-menu">
+            <li class="elemento-menu">
+                Novedades
+            </li>
+            <li class="elemento-menu">
+                Anillos
+            </li>
+            <li class="sub-elemento-menu">
+                &nbsp &nbsp Anchos
+            </li>
+            <li class="sub-elemento-menu">
+                &nbsp &nbsp Delgados
+            </li>
+            <li class="sub-elemento-menu">
+                &nbsp &nbsp Simbólicos
+            </li>
+            <li class="elemento-menu">
+                Aros
+            </li>
+            <li class="sub-elemento-menu">
+                &nbsp &nbsp Colgantes
+            </li>
+            <li class="sub-elemento-menu">
+                &nbsp &nbsp Pequeños
+            </li>
+            <br>
+            <br>
+            <br>
+            <li class="elemento-menu2">
+                Iniciar Sesión
+            </li>
+            <li class="elemento-menu2">
+                Su carrito
+            </li>
+            <li class="elemento-menu2">
+                Pongase en contacto
+            </li>
+        </ul>
+      </div>
       <section class="sec1">
         <img src="multimedia/offline.png" alt="">
       </section>
@@ -106,6 +149,7 @@
             </div>
         </div>
     </footer>
+    <div id="fondo-menu" class="fondo-difuminado"></div>
     <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
