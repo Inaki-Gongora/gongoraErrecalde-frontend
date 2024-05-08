@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    scrollbar-width: none;
 }
 
 body {
@@ -254,4 +255,26 @@ input {
     cursor: pointer;
     transform: translateX(-100%);
     margin-top: 2px;
+}
+
+.swal-button {
+    font-family: "Advent Pro", sans-serif !important; 
+    font-size: 15px !important;
+    font-weight: bold !important;
+    width: calc(100% - 140px) !important; 
+    background-color: #093b5d !important; 
+    color: #fff !important;
+    border: none !important;
+    margin-bottom: 10px !important;
+    border-radius: 5px !important;
+    padding: 10px 20px !important;
+    transition: transform 0.5s !important;
+    cursor: pointer !important;
+}
+
+.swal-title {
+    font-size: 24px !important;
+    font-family: "Advent Pro", sans-serif !important; 
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
 }

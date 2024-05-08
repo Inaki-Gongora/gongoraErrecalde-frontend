@@ -6,7 +6,11 @@ function validarFormulario() {
     let password = document.getElementById("contraseñaregistrarse").value;
 
     if (usuario === "" || email === "" || password === "") {
-        alert("Por favor completa todos los campos.");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Por favor completa todos los campos.",
+          });
         return false;
     }
     
@@ -20,7 +24,11 @@ function validarFormularioLogin() {
     let contraseña = document.getElementById("contraseñalogin").value;
 
     if (usuario === "" || contraseña === "") {
-        alert("Por favor completa todos los campos.");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Por favor completa todos los campos.",
+          });
         return false; 
     }
 
@@ -31,7 +39,11 @@ function validarFormularioRecuperar() {
     let email = document.getElementById("emailrecuperacion").value;
 
     if (email === "") {
-        alert("Por favor ingresa tu correo electrónico.");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Por favor ingresa tu correo electrónico.",
+          });
         return false;
     }
 
@@ -44,7 +56,11 @@ function validarFormularioVerificacion() {
     let codigo = document.getElementById("codigoverificacion").value;
 
     if (codigo === "") {
-        alert("Por favor ingresa el código de verificación.");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Por favor ingresa el código de verificación",
+          });
         return false;
     }
 
