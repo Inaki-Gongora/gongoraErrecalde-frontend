@@ -187,6 +187,13 @@
     margin-top: 4vh;
     position: relative;
     width: fit-content;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .elemento-menu:visited{
+    text-decoration: none;
+    color: #000;
   }
   
   .sub-elemento-menu{
@@ -197,6 +204,13 @@
     margin-bottom: -1vh;
     position: relative;
     width: fit-content;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .sub-elemento-menu:visited{
+    text-decoration: none;
+    color: #000;
   }
   
   .elemento-menu2{
@@ -206,11 +220,18 @@
     margin-top: 3vh;
     position: relative;
     width: fit-content;
+    text-decoration: none;
+    color: black;
+  }
+
+  .elemento-menu2:visited{
+    text-decoration: none;
+    color: black;
   }
   
   .elemento-menu:hover, .sub-elemento-menu:hover, .elemento-menu2:hover{
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: all 0.25s;
   }
   
@@ -219,12 +240,12 @@
     opacity: 0; 
     transition: opacity 0.25s ease-in-out; 
     position: absolute;
-    right: -15px;
+    right: -17px;
     top: 2px;
   }
   
   .sub-elemento-menu:hover::after {
-    opacity: 1; 
+    opacity: 0.65; 
   }
   
   .elemento-menu::before, .elemento-menu2::before {
