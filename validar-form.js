@@ -1,16 +1,59 @@
 //validar formularios
 
+let alertaTimeout;
+let alertaDiv;
+
+function mostrarAlerta(mensaje, tipo) {
+    if (alertaDiv) {
+        alertaDiv.textContent = mensaje;
+        alertaDiv.className = `alerta alerta-${tipo}`;
+        reiniciarTemporizador();
+    } else {
+        alertaDiv = document.createElement('div');
+        alertaDiv.className = `alerta alerta-${tipo}`;
+        alertaDiv.appendChild(document.createTextNode(mensaje));
+        const alertContainer = document.querySelector('.alert-container');
+        alertContainer.appendChild(alertaDiv);
+
+        setTimeout(() => {
+            alertaDiv.classList.add('mostrar');
+        }, 10);
+
+        iniciarTemporizador();
+    }
+}
+
+function iniciarTemporizador() {
+    clearTimeout(alertaTimeout);
+    alertaTimeout = setTimeout(() => {
+        ocultarAlerta();
+    }, 3000);
+}
+
+function reiniciarTemporizador() {
+    clearTimeout(alertaTimeout);
+    iniciarTemporizador();
+}
+
+function ocultarAlerta() {
+    if (alertaDiv) {
+        alertaDiv.classList.remove('mostrar');
+        setTimeout(() => {
+            alertaDiv.remove();
+            alertaDiv = null;
+        }, 200);
+    }
+}
+
+
+
 function validarFormulario() {
     let usuario = document.getElementById("nombreregistrarse").value;
     let email = document.getElementById("emailregistrarse").value;
     let password = document.getElementById("contraseñaregistrarse").value;
 
     if (usuario === "" || email === "" || password === "") {
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Por favor completa todos los campos.",
-          });
+        mostrarAlerta("Por favor completa todos los campos.", "danger");
         return false;
     }
     
@@ -24,11 +67,7 @@ function validarFormularioLogin() {
     let contraseña = document.getElementById("contraseñalogin").value;
 
     if (usuario === "" || contraseña === "") {
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Por favor completa todos los campos.",
-          });
+        mostrarAlerta("Por favor completa todos los campos.", "danger");
         return false; 
     }
 
@@ -39,11 +78,7 @@ function validarFormularioRecuperar() {
     let email = document.getElementById("emailrecuperacion").value;
 
     if (email === "") {
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Por favor ingresa tu correo electrónico.",
-          });
+        mostrarAlerta("Por favor ingresa tu correo electrónico.", "danger");
         return false;
     }
 
@@ -56,16 +91,13 @@ function validarFormularioVerificacion() {
     let codigo = document.getElementById("codigoverificacion").value;
 
     if (codigo === "") {
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Por favor ingresa el código de verificación",
-          });
+        mostrarAlerta("Por favor ingresa el código de verificación", "danger");
         return false;
     }
 
     return true;
 }
+
 
 // Mostrar/Ocultar contraseña
 
