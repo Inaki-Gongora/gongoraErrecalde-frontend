@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main {
+  margin-top: 150px;
+}
+
+body {
+  font-family: "Advent Pro";
+  overflow-x: hidden;
+}
+
+.links,.links:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.lorems {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFF;
+  font-family: "Advent Pro";
+  font-size: 16px;
+  font-weight: 400; 
+  line-height: normal;
+  opacity: 0.8;
+}
+
+main{
+  background-color: #F9F9F9;
+}
+
+.zephyr-grande{
+  margin-top: 1.4%;
+}
+
+.icono-menu{
+  z-index: 4;
+}
+
+.menu-desplegable{
+  top: 0;
+}
