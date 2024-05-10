@@ -1,0 +1,153 @@
+  .abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+  .advent-pro-clean {
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  .div-contacto{
+    float: left;
+    margin-left: 80px;
+    height: 100px;
+  }
+  
+  .contacto-texto{
+    font-size: 35px;
+    font-family: "Advent Pro";
+    margin-top: 50px;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  
+  .contacto-texto::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .contacto-texto:hover::before {
+    width: 100%;
+  }
+  
+  .contacto-a,.contacto-a:visited{
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .contacto-a:hover{
+    opacity: 0.6; 
+    transition: all 0.2s;
+  }
+
+  header {
+    background-color: #F9F9F9;
+    height: 100px;
+    width: auto;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    z-index: 2;
+    border-bottom: 1px solid #000;
+    opacity: 0.85;
+  }
+  
+  .botones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(0.65,0.65);
+    float: right;
+  }
+  
+  .botones-header button {
+    height: 100px;
+    border: none;
+    transform: scale(0.7,0.7);
+    vertical-align: middle;
+  }
+  
+  .botones-header :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .icono-menu,.icono-buscar,.icono-carro,.icono-usuario {
+    background: none;
+  }
+  
+  .zephyr-grande{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-size: 80px;
+    opacity: 0.9;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50%; /*Aca estoy centrando el texto dentro del botón*/
+    z-index: 3;
+    transform: translateX(-50%);
+    top: 10px;
+    left: 50%;
+    position: fixed;
+    opacity: "";
+  }
+  
+  .zephyr-grande:hover{
+    opacity: 0.65;
+  }
+  
+  .zephyr-grande:active{
+    opacity: 0.8;
+  }
+  
+  .logo-marca:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .marca-registrada {
+    font-size: 40px;
+    vertical-align:bottom;
+  }
+
+  footer {
+    height: max-content;
+    background-color: #403F3F;
+  }
+  
+  .titulo-footer {
+    font-family: "Abril Fatface";
+    font-size: 150px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+
+  .lorems {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFF;
+    font-family: "Advent Pro";
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: normal;
+    opacity: 0.8;
+  }
+
+  
