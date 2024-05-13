@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zephyr - Anillos</title>
     <link rel="icon" href="./multimedia/logo1.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="styleAnillos.css">
-    <link rel="stylesheet" href="styleHeaderFooter.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/styleAnillos.css">
+    <link rel="stylesheet" href="/css/styleHeaderFooter.css">
+    <link rel="stylesheet" href="/css/css/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,46 +20,113 @@
 <body>
     <header id="header" style="transition: top 0.5s ease;">
         <div class="div-contacto">
-            <a href="contacto.html" class="contacto-a">
+            <a href="/html/contacto.html" class="contacto-a">
                 <p class="contacto-texto" id="contacto-texto">CONTACTO</p>
             </a>
         </div>
-        <div class="botones-header">
-            <button class="icono-buscar">
-                <img src="multimedia/buscar.png" alt="buscar">
+        <div class="botones-header" id="botones-header">
+            <button class="icono-buscar" id="icono-buscar">
+                <img src="/multimedia/buscar.png" alt="buscar">
             </button>
 
             <button class="icono-carro" id="icono-carro">
-              <a href="carro.html">
-                  <img src="multimedia/carro.png" alt="carro">
+              <a href="/html/carro.html">
+                  <img src="/multimedia/carro.png" alt="carro">
               </a>
             </button>
             <button class="icono-usuario" id="icono-usuario">
-              <a href="login.html">
-                  <img src="multimedia/user.png" alt="usuario">
+              <a href="/html/login.html">
+                  <img src="/multimedia/user.png" alt="usuario">
               </a>
             </button>
-            <button class="icono-menu">
-              <img src="multimedia/menu.png" alt="menu">
+            <button class="icono-menu" id="icono-menu">
+              <img src="/multimedia/menu.png" alt="menu">
             </button>
         </div>
-        <a href="landing.html" class="logo-marca" id="logo-marca">
+        <a href="/html/landing.html" class="logo-marca" id="logo-marca">
           <h1 class="zephyr-grande" id='zephyr-grande'>ZEPHYR<span class="marca-registrada">&reg;</span></h1>
         </a>
     </header>
 
     <script src="scriptProductos.js"></script>
     <main>
+      <div class="menu-desplegable" id="menu-desplegable">
+        <button class="cerrar-menu" id="boton-cerrar-menu">
+            <p class="x-cerrar-menu">
+                X
+            </p>
+        </button>
+        <ul class="lista-menu">
+            <li class="elemento-menu">
+                Novedades
+            </li>
+            <li class="elemento-menu">
+                <a href="/html/productoAnillos.html" class="elemento-menu">
+                    Anillos
+                </a>                        
+            </li>
+            <li class="sub-elemento-menu">
+                <a href="/html/productoAnillos.html" class="sub-elemento-menu">
+                    &nbsp &nbsp Anchos
+                </a>                       
+            </li>
+            <li class="sub-elemento-menu">
+                <a href="/html/productoAnillos.html" class="sub-elemento-menu">
+                    &nbsp &nbsp Delgados
+                </a>                   
+            </li>
+            <li class="sub-elemento-menu">
+                <a href="/html/productoAnillos.html" class="sub-elemento-menu">
+                    &nbsp &nbsp Simbólicos
+                </a>                   
+            </li>
+            <li class="elemento-menu">
+                <a href="/html/productoAros.html" class="elemento-menu">
+                    Aros
+                </a>                 
+            </li>
+            <li class="sub-elemento-menu">
+                <a href="/html/productoAros.html" class="sub-elemento-menu">
+                    &nbsp &nbsp Colgantes
+                </a>  
+                
+            </li>
+            <li class="sub-elemento-menu">
+                <a href="/html/productoAros.html" class="sub-elemento-menu">
+                    &nbsp &nbsp Pequeños
+                </a>  
+                
+            </li>
+            <br>
+            <br>
+            <br>
+            <li class="elemento-menu2">
+                <a class="elemento-menu2" href="/html/login.html">
+                    Iniciar Sesión
+                </a>
+            </li>
+            <li class="elemento-menu2">
+                <a class="elemento-menu2" href="/html/carro.html">
+                    Su carrito
+                </a>
+            </li>
+            <li class="elemento-menu2">
+                <a class="elemento-menu2" href="/html/contacto.html">
+                    Pongase en contacto
+                </a>
+            </li>   
+        </ul>
+    </div>
       <div class="titulo-producto">
         <h1 class="anillos-titulo">ANILLOS</h1>
       </div>
       <div class="filtrar-ordenar">
         <button class="filtrar-por">
-          <img src="multimedia/filtrar.png" alt="filtrar" class="filtrar-logo">
+          <img src="/multimedia/filtrar.png" alt="filtrar" class="filtrar-logo">
         <p class="filtord">Filtrar</p>
         </button>
         <button class="ordenar-por">
-          <img src="multimedia/ordenar.png" alt="ordenar" class="ordenar-logo">
+          <img src="/multimedia/ordenar.png" alt="ordenar" class="ordenar-logo">
         <p class="filtord">Ordenar</p>
         </button>
       </div>
@@ -75,8 +142,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -91,8 +158,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -107,8 +174,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -123,8 +190,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -139,8 +206,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -161,8 +228,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -177,8 +244,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -193,8 +260,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -209,8 +276,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -225,8 +292,8 @@
             </button>
           </div>
           <div class="box-producto">
-            <a class="links" href="vista-producto1.html" class="foto-producto">
-              <img src="multimedia/foto-producto2.png" alt="producto1" >
+            <a class="links" href="/html/vista-producto1.html" class="foto-producto">
+              <img src="/multimedia/foto-producto2.png" alt="producto1" >
             </a>
           </div>
           <div class="textos">
@@ -237,15 +304,38 @@
       </section>
     </main>
     <footer>
-      <p class="lorems">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p>
-      <h1 class="titulo-footer">
-        ZEPHYR<span class="marca-registrada">&reg;</span>
-      </h1>
+      <div class="footer-izq">
+          <br>
+          <p>E-mail de contacto:</p>
+          <p>zephyr.ent@contact.zephyr.com</p>
+          <br>
+          <p>Número de teléfono:</p>
+          <p>+54 (261)3865948</p>
+          <br>
+          <p>Encontranos en:</p>
+          <p>Perito Moreno 2397 y Artigas, Godoy Cruz,</p>
+          <p>Mendoza, Argentina</p>
+        </div>
+        <div class="div-titulo-footer">
+            <h1 class="titulo-footer">
+                ZEPHYR<span class="marca-registrada">&reg;</span>
+            </h1>
+            <p class="copywrite">© 2024 Zephyr. Todos los derechos reservados.</p>
+        </div>
+        <div class="column-footer">
+            <p class="seguinos">Seguinos en nuestras redes </p>
+            <div class="botones-footer">
+                <a href="https://www.instagram.com/zephyr.joyas/"><img src="/multimedia/instagram-icon.png" alt="Instagram" class="icono-instagram"></a>
+                <a href="https://www.facebook.com/"><img src="/multimedia/facebook-icon.png" alt="Facebook" class="icono-facebook"></a>
+                <a href="https://www.tiktok.com/@zephyr.joyas?lang=es"><img src="/multimedia/tiktok-icon.png" alt="TikTok" class="icono-tiktok"></a>
+                <a href="https://www.youtube.com/"><img src="/multimedia/youtube-icon.png" alt="YouTube" class="icono-youtube"></a>
+            </div>
+        </div>
     </footer>
-    <script src="js/wow.min.js"></script>
+    <div id="fondo-menu" class="fondo-difuminado"></div>
+    <script src="/js/scriptHeaderFooter.js"></script>
+    <script src="/js/scriptProductos.js"></script>
+    <script src="/js/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>

@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-  background-image: url(multimedia/anillos-fondo.png);
+  background-image: url(/multimedia/anillos-fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -152,13 +152,13 @@ body {
   float: right;
   transform: scale(0.4,0.4);
   background-color: transparent;
-  background-image:url(multimedia/corazon-blanco.png);
+  background-image:url(/multimedia/corazon-blanco.png);
   background-size: cover;
 }
 
 .agregar-favorito:hover{
   cursor: pointer;
-  background-image: url(multimedia/corazon-negro.png);
+  background-image: url(/multimedia/corazon-negro.png);
   opacity: 0.6;
   transition: all 0.2s;
 }
@@ -240,4 +240,8 @@ footer {
 
 main{
   background-color: #F9F9F9;
+}
+
+.menu-desplegable{
+  top: 0;
 }
