@@ -237,16 +237,18 @@
   
   .sub-elemento-menu::after {
     content: ' >';
-    opacity: 0; 
-    transition: opacity 0.25s ease-in-out; 
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; /* Agregamos transición para transform */
     position: absolute;
-    right: -17px;
-    top: 2px;
-  }
-  
-  .sub-elemento-menu:hover::after {
-    opacity: 0.65; 
-  }
+    right: -16px;
+    top: 1.5px;
+    transform: translateX(-5px); /* Inicialmente desplazado hacia la izquierda */
+}
+
+.sub-elemento-menu:hover::after {
+    opacity: 0.65;
+    transform: translateX(0); /* Cuando haces hover, regresa a la posición original */
+}
   
   .elemento-menu::before, .elemento-menu2::before {
     content: '';
